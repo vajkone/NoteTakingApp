@@ -23,7 +23,8 @@ egy olyan applikációt ajánlani, ami segíti őket a hatékony jegyzetelésben
 
 #### 5. A rendszerre vonatkozó szabályok
 A képek jpeg és png formátumúak lehetnek.
-A grafikus felület xml-ben készüljön
+A grafikus felület xml-ben készüljön.
+A szerkesztő a Cornell jegyzetelési módszert valósítsa meg.
 
 #### 6. Követelménylista
 K01 Az alkalmazás legyen egyszerű, könnyen kezelhető  
