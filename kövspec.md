@@ -20,17 +20,19 @@ egy olyan applikációt ajánlani, ami segíti őket a hatékony jegyzetelésben
 4.2 Jegyzetek egyszerű kilistázása  
 4.3 Új jegyzet egyszerű felvétele => egy gomb megnyomásával  
 4.4 Jegyzet szerkesztéséhez egyszerű felület  
+4.5 Jegyzetek csoportosítása és rendezése
 
 #### 5. A rendszerre vonatkozó szabályok
-A képek jpeg és png formátumúak lehetnek.
-A grafikus felület xml-ben készüljön.
-A szerkesztő a Cornell jegyzetelési módszert valósítsa meg.
+A képek jpeg és png formátumúak lehetnek.  
+A grafikus felület xml-ben készüljön
 
 #### 6. Követelménylista
 K01 Az alkalmazás legyen egyszerű, könnyen kezelhető  
 K02 Letisztult, igényes grafikus felülettel rendelkezzen  
-K03 Ne tartalmazzon felesleges funkciókat  
+K03 Ne tartalmazzon felesleges funkciókat   
 K04 Az alkalmáz legyen offline  
 K05 Az alkalmazás legyen alacsony rendszerigényű  
+K06 Ne férjen hozzá a telefonon lévő többi adathoz  
+K07 Ne függjön más alkalmazásoktól (Pl.: Google)
 
 #### 7. Fogalomszótár
