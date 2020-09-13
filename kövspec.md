@@ -28,8 +28,9 @@ egy olyan applikációt ajánlani, ami segíti őket a hatékony jegyzetelésben
 #### 5. A rendszerre vonatkozó szabályok
 Az alkalmazás íródjon Java programozási nyelven  
 A képek jpeg és png formátumúak lehetnek  
-A grafikus felület xml-ben készüljön  
-Működjön az 5.0 vagy annál nagyobb verziószámú androidos mobiltelefonokon, tableteken
+A grafikus felület xml-ben készüljön.
+A szerkesztő a Cornell jegyzetelési módszert valósítsa meg.
+Működjön az 5.0 vagy annál nagyobb verziószámú androidos mobiltelefonokon, tableteken.
 
 #### 6. Követelménylista
 K01 Az alkalmazás legyen egyszerű, könnyen kezelhető  
@@ -41,3 +42,4 @@ K06 Ne férjen hozzá a telefonon lévő többi adathoz
 K07 Ne függjön más alkalmazásoktól (Pl.: Google)
 
 #### 7. Fogalomszótár
+Cornell jegyzetelési módszer:Walter Pauk által kifejlesztett,előadásokon leadott tananyagok jegyzetelési módszere.
