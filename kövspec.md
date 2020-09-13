@@ -11,3 +11,6 @@ Elsősorban egyetemeken, de akár gimnáziumokban, középiskolákban is ma már
 Az eddigi tendencia az volt, hogy az oktatók hogyan vegyék fel a diákok figyelméért való harcot azoknak telefonjával szemben, viszont egy új irányzat szerint azt a kérdést kéne
 feltenni, hogy hogyan tudnánk az okostelefonokat a legjobban az oktatásba integrálni. Ezen a vonalon elindulva szeretnénk mi is, elsősorban egyetemeknek és azok hallgatóinak
 egy olyan applikációt ajánlani, ami segíti őket a hatékony jegyzetelésben. 
+
+#### 3. Jelenlegi üzleti folyamatok
+     3.1 Különböző jegyzetelési módszerek tanítása Pl.Cornell módszer 
