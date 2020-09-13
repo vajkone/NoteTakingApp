@@ -45,6 +45,9 @@ K07 Ne függjön más alkalmazásoktól (Pl.: Google)
 #### 7. Fogalomszótár
 Cornell jegyzetelési módszer:Walter Pauk által kifejlesztett,előadásokon leadott tananyagok jegyzetelési módszere.  
 XML: eXtensible Markup Language" (bővíthető jelölő nyelv). Ez egy leíró nyelv,melynek célja elsősorban adatok, információk, és ezek struktúráinak leírása.  
-PNG: A PNG (Portable Network Graphics) képek tárolására, veszteségmentes tömörítésére alkalmas fájlformátum.
-JPEG: A JPEG (Joint Photographic Experts Group) képek tárolására alkalmas fájlformátum.
-Java és Kotlin: Programozási nyelvek
+PNG: A PNG (Portable Network Graphics) képek tárolására, veszteségmentes tömörítésére alkalmas fájlformátum.  
+JPEG: A JPEG (Joint Photographic Experts Group) képek tárolására alkalmas fájlformátum.  
+Java és Kotlin: Programozási nyelvek  
+Android: Az Android egy Linux alapú operációs rendszer, amely elsősorban mobil készülékek és tabletek részére készült.  
+Grafikus felhasználói felület: A felhasználó és a számítógép közti kommunikációt lehetővé tevő felület, amely szöveges parancsok és üzenetek helyett részben vagy teljesen grafikus elemek segítségével teszi lehetővé a vezérlést és a visszajelzést.  
+Offline: Offline szoftvereknek azokat az alkalmazásokat nevezzük, amelyek használatához nincs szükség internetre.
