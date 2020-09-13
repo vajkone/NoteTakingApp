@@ -13,9 +13,13 @@ feltenni, hogy hogyan tudnánk az okostelefonokat a legjobban az oktatásba inte
 egy olyan applikációt ajánlani, ami segíti őket a hatékony jegyzetelésben. 
 
 #### 3. Jelenlegi üzleti folyamatok
-     3.1 Különböző jegyzetelési módszerek tanítása Pl.Cornell módszer 
+3.1 Különböző jegyzetelési módszerek tanítása Pl.Cornell módszer
      
 #### 4. Igényelt üzleti folyamatok
+4.1 Offline megjelenés
+4.2 Jegyzetek egyszerű kilistázása
+4.3 Új jegyzet egyszerű felvétele => egy gomb megnyomásával
+4.4 Jegyzet szerkesztéséhez egyszerű felület
 
 #### 5. A rendszerre vonatkozó szabályok
 A képek jpeg és png formátumúak lehetnek.
