@@ -23,8 +23,10 @@ egy olyan applikációt ajánlani, ami segíti őket a hatékony jegyzetelésben
 4.5 Jegyzetek csoportosítása és rendezése
 
 #### 5. A rendszerre vonatkozó szabályok
-A képek jpeg és png formátumúak lehetnek.  
-A grafikus felület xml-ben készüljön
+Az alkalmazás íródjon Java programozási nyelven  
+A képek jpeg és png formátumúak lehetnek  
+A grafikus felület xml-ben készüljön  
+Működjön az 5.0 vagy annál nagyobb verziószámú androidos mobiltelefonokon, tableteken
 
 #### 6. Követelménylista
 K01 Az alkalmazás legyen egyszerű, könnyen kezelhető  
