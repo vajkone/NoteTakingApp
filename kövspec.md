@@ -17,6 +17,7 @@ egy olyan applikációt ajánlani, ami segíti őket a hatékony jegyzetelésben
 3.2 Igények keresése közvélemény kutatással a diákok körében.  
 3.3 Iskolai tanácsadás.  
 3.4 Diákok jegyzetelési szokásainak felmérése.  
+3.5 Tanulási módszerek publikálása.  
      
 #### 4. Igényelt üzleti folyamatok
 4.1 Offline megjelenés  
@@ -26,9 +27,9 @@ egy olyan applikációt ajánlani, ami segíti őket a hatékony jegyzetelésben
 4.5 Jegyzetek csoportosítása és rendezése
 
 #### 5. A rendszerre vonatkozó szabályok
-Az alkalmazás íródjon Java programozási nyelven  
+Az alkalmazás íródjon Java vagy Kotlin programozási nyelven  
 A képek jpeg és png formátumúak lehetnek  
-A grafikus felület xml-ben készüljön.  
+A grafikus felület XML-ben készüljön.  
 A szerkesztő a Cornell jegyzetelési módszert valósítsa meg.  
 Működjön az 5.0 vagy annál nagyobb verziószámú androidos mobiltelefonokon, tableteken.
 
@@ -42,4 +43,8 @@ K06 Ne férjen hozzá a telefonon lévő többi adathoz
 K07 Ne függjön más alkalmazásoktól (Pl.: Google)
 
 #### 7. Fogalomszótár
-Cornell jegyzetelési módszer:Walter Pauk által kifejlesztett,előadásokon leadott tananyagok jegyzetelési módszere.
+Cornell jegyzetelési módszer:Walter Pauk által kifejlesztett,előadásokon leadott tananyagok jegyzetelési módszere.  
+XML: eXtensible Markup Language" (bővíthető jelölő nyelv). Ez egy leíró nyelv,melynek célja elsősorban adatok, információk, és ezek struktúráinak leírása.  
+PNG: A PNG (Portable Network Graphics) képek tárolására, veszteségmentes tömörítésére alkalmas fájlformátum.
+JPEG: A JPEG (Joint Photographic Experts Group) képek tárolására alkalmas fájlformátum.
+Java és Kotlin: Programozási nyelvek
