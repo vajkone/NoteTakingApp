@@ -13,7 +13,10 @@ feltenni, hogy hogyan tudnánk az okostelefonokat a legjobban az oktatásba inte
 egy olyan applikációt ajánlani, ami segíti őket a hatékony jegyzetelésben. 
 
 #### 3. Jelenlegi üzleti folyamatok
-3.1 Különböző jegyzetelési módszerek tanítása Pl.Cornell módszer
+3.1 Különböző jegyzetelési módszerek tanítása Pl.Cornell módszer.  
+3.2 Igények keresése közvélemény kutatással a diákok körében.  
+3.3 Iskolai tanácsadás.  
+3.4 Diákok jegyzetelési szokásainak felmérése.  
      
 #### 4. Igényelt üzleti folyamatok
 4.1 Offline megjelenés  
