@@ -31,7 +31,8 @@ Az alkalmazás íródjon Java vagy Kotlin programozási nyelven
 A képek jpeg és png formátumúak lehetnek  
 A grafikus felület XML-ben készüljön.  
 A szerkesztő a Cornell jegyzetelési módszert valósítsa meg.  
-Működjön az 5.0 vagy annál nagyobb verziószámú androidos mobiltelefonokon, tableteken.
+Működjön az 5.0 vagy annál nagyobb verziószámú androidos mobiltelefonokon, tableteken.  
+Felvitt adatok tárolása lokálisan, SQL alapú adatbázisban.
 
 #### 6. Követelménylista
 K01 Az alkalmazás legyen egyszerű, könnyen kezelhető  
