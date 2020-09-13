@@ -28,8 +28,8 @@ egy olyan applikációt ajánlani, ami segíti őket a hatékony jegyzetelésben
 #### 5. A rendszerre vonatkozó szabályok
 Az alkalmazás íródjon Java programozási nyelven  
 A képek jpeg és png formátumúak lehetnek  
-A grafikus felület xml-ben készüljön.
-A szerkesztő a Cornell jegyzetelési módszert valósítsa meg.
+A grafikus felület xml-ben készüljön.  
+A szerkesztő a Cornell jegyzetelési módszert valósítsa meg.  
 Működjön az 5.0 vagy annál nagyobb verziószámú androidos mobiltelefonokon, tableteken.
 
 #### 6. Követelménylista
