@@ -51,4 +51,5 @@ JPEG: A JPEG (Joint Photographic Experts Group) képek tárolására alkalmas f�
 Java és Kotlin: Programozási nyelvek  
 Android: Az Android egy Linux alapú operációs rendszer, amely elsősorban mobil készülékek és tabletek részére készült.  
 Grafikus felhasználói felület: A felhasználó és a számítógép közti kommunikációt lehetővé tevő felület, amely szöveges parancsok és üzenetek helyett részben vagy teljesen grafikus elemek segítségével teszi lehetővé a vezérlést és a visszajelzést.  
-Offline: Offline szoftvereknek azokat az alkalmazásokat nevezzük, amelyek használatához nincs szükség internetre.
+Offline: Offline szoftvereknek azokat az alkalmazásokat nevezzük, amelyek használatához nincs szükség internetre.  
+SQL: Relációs adatbáziskezelő, lekérdező nyelv.
