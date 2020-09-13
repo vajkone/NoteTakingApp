@@ -14,3 +14,14 @@ egy olyan applikációt ajánlani, ami segíti őket a hatékony jegyzetelésben
 
 #### 3. Jelenlegi üzleti folyamatok
      3.1 Különböző jegyzetelési módszerek tanítása Pl.Cornell módszer 
+     
+#### 4. Igényelt üzleti folyamatok
+
+#### 5. A rendszerre vonatkozó szabályok
+
+#### 6. Követelménylista
+K01 Az alkalmazás legyen egyszerű, könnyen kezelhető  
+K02 Letisztult, igényes grafikus felülettel rendelkezzen  
+K03 Ne tartalmazzon felesleges funkciókat  
+
+#### 7. Fogalomszótár
