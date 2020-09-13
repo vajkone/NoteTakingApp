@@ -16,10 +16,10 @@ egy olyan applikációt ajánlani, ami segíti őket a hatékony jegyzetelésben
 3.1 Különböző jegyzetelési módszerek tanítása Pl.Cornell módszer
      
 #### 4. Igényelt üzleti folyamatok
-4.1 Offline megjelenés
-4.2 Jegyzetek egyszerű kilistázása
-4.3 Új jegyzet egyszerű felvétele => egy gomb megnyomásával
-4.4 Jegyzet szerkesztéséhez egyszerű felület
+4.1 Offline megjelenés  
+4.2 Jegyzetek egyszerű kilistázása  
+4.3 Új jegyzet egyszerű felvétele => egy gomb megnyomásával  
+4.4 Jegyzet szerkesztéséhez egyszerű felület  
 
 #### 5. A rendszerre vonatkozó szabályok
 A képek jpeg és png formátumúak lehetnek.
@@ -28,8 +28,8 @@ A grafikus felület xml-ben készüljön
 #### 6. Követelménylista
 K01 Az alkalmazás legyen egyszerű, könnyen kezelhető  
 K02 Letisztult, igényes grafikus felülettel rendelkezzen  
-K03 Ne tartalmazzon felesleges funkciókat
-K04 Az alkalmáz legyen offline
-K05 Az alkalmazás legyen alacsony rendszerigényű
+K03 Ne tartalmazzon felesleges funkciókat  
+K04 Az alkalmáz legyen offline  
+K05 Az alkalmazás legyen alacsony rendszerigényű  
 
 #### 7. Fogalomszótár
