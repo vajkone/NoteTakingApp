@@ -32,3 +32,15 @@ K04 Az alkalmáz legyen offline
 K05 Az alkalmazás legyen alacsony rendszerigényű  
 K06 Ne férjen hozzá a telefonon lévő többi adathoz  
 K07 Ne függjön más alkalmazásoktól (Pl.: Google)  
+
+#### 8. Fogalomszótár
+Cornell jegyzetelési módszer: Walter Pauk által kifejlesztett, előadásokon leadott tananyagok jegyzetelési módszere.  
+XML: eXtensible Markup Language" (bővíthető jelölő nyelv). Ez egy leíró nyelv, melynek célja elsősorban adatok, információk, és ezek struktúráinak leírása.  
+PNG: A PNG (Portable Network Graphics) képek tárolására, veszteségmentes tömörítésére alkalmas fájlformátum.  
+JPEG: A JPEG (Joint Photographic Experts Group) képek tárolására alkalmas fájlformátum.  
+Java: Általános célú, konkurens, osztály alapú, objektumorientált programozási nyelv. A Java programok fordítása rendszerint egy gépfüggetlen bájtkód reprezentációba történik, melynek végrehajtására a Java virtuális gépek szolgálnak.  
+Kotlin: Erősen típusos programozási nyelv, Java virtuális gépre és JavaScript kódra is lefordítható. Bár a szintaxisa nem kompatibilis a Java programnyelvvel, a Kotlin együttműködik a Java-ban írt kóddal és épít a java programkönyvtár részeire.  
+Android: Az Android egy Linux alapú operációs rendszer, amely elsősorban mobil készülékek és tabletek részére készült.  
+Grafikus felhasználói felület: A felhasználó és a számítógép közti kommunikációt lehetővé tevő felület, amely szöveges parancsok és üzenetek helyett részben vagy teljesen grafikus elemek segítségével teszi lehetővé a vezérlést és a visszajelzést.  
+Offline: Offline szoftvereknek azokat az alkalmazásokat nevezzük, amelyek használatához nincs szükség internetre.  
+SQL: Relációs adatbáziskezelő, lekérdező nyelv. Az adatbázisban tárolt információk visszanyerésére szolgál, de rendelkezik néhány adatbeviteli és módosítási lehetöséggel is.
