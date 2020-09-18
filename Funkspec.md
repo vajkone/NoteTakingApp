@@ -46,7 +46,7 @@ Offline: Offline szoftvereknek azokat az alkalmazásokat nevezzük, amelyek hasz
 SQL: Relációs adatbáziskezelő, lekérdező nyelv. Az adatbázisban tárolt információk visszanyerésére szolgál, de rendelkezik néhány adatbeviteli és módosítási lehetöséggel is.
 
 #### 10.Képernyő tervek
-https://github.com/vajkone/NoteTakingApp/blob/master/K%C3%A9pek/prototipus1.jpg  
-https://github.com/vajkone/NoteTakingApp/blob/master/K%C3%A9pek/prototipus2.jpg  
+[Kép 1](https://github.com/vajkone/NoteTakingApp/blob/master/K%C3%A9pek/prototipus1.jpg)  
+[Kép 2](https://github.com/vajkone/NoteTakingApp/blob/master/K%C3%A9pek/prototipus2.jpg)  
 
 
