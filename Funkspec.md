@@ -44,3 +44,9 @@ Android: Az Android egy Linux alapú operációs rendszer, amely elsősorban mob
 Grafikus felhasználói felület: A felhasználó és a számítógép közti kommunikációt lehetővé tevő felület, amely szöveges parancsok és üzenetek helyett részben vagy teljesen grafikus elemek segítségével teszi lehetővé a vezérlést és a visszajelzést.  
 Offline: Offline szoftvereknek azokat az alkalmazásokat nevezzük, amelyek használatához nincs szükség internetre.  
 SQL: Relációs adatbáziskezelő, lekérdező nyelv. Az adatbázisban tárolt információk visszanyerésére szolgál, de rendelkezik néhány adatbeviteli és módosítási lehetöséggel is.
+
+#### 10.Képernyő tervek
+https://github.com/vajkone/NoteTakingApp/blob/master/K%C3%A9pek/prototipus1.jpg  
+https://github.com/vajkone/NoteTakingApp/blob/master/K%C3%A9pek/prototipus2.jpg  
+
+
