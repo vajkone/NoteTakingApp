@@ -15,6 +15,15 @@ Ahogy a megrendelői [követelményspecifikációban](https://github.com/vajkone
 3.4 Diákok jegyzetelési szokásainak felmérése.  
 3.5 Tanulási módszerek publikálása.  
 
+#### 4. Igényelt üzleti folyamatok
+A megrendelő a [követelményspecifikációban](https://github.com/vajkone/NoteTakingApp/blob/master/k%C3%B6vspec.md#4-ig%C3%A9nyelt-%C3%BCzleti-folyamatok) kifejtette, hogy jelenlegi üzleti folyamatait egy mobilalkalmazás használatával bővítené, mely alkalmazás diákok jegyzetelését hívatott segíteni. Az alkalmazással szemben támasztott üzleti folyamatok és jellemzők már kiegészítve cégünk ajánlásával:  
+*Az applikáció offline is használható  
+*Új jegyzet egyszerű felvétele => egy "hozzáad" gomb megnyomásával a jegyzetelő felületre kerülünk => "jegyzet mentése" gombbal a jegyzetet elmentjük  
+*Jegyzetek egyszerű kilistázása  
+*Jegyzet szerkesztése => korábbi jegyzetre való kattintással  
+*Jegyzetek csoportosítása és rendezése => kulcsszavak, címkék avagy dátum szerint lista nézetben  
+*Jegyzetek között való hatékony és gyors keresés kulcsszavakkal vagy dátum alapján  
+
 #### 7. Követelménylista
 K01 Az alkalmazás legyen egyszerű, könnyen kezelhető  
 K02 Letisztult, igényes grafikus felülettel rendelkezzen  
