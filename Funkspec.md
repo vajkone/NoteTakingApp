@@ -31,8 +31,7 @@ rendszeren érhető el. Az applikáció jelenleg más mobil operációs rendszer
 fizetéses elemek.  
 - Az applikáció és az alapjául szolgáló szoftvertermék a szerzői jogról szóló 1999. évi LXXVI. törvény és
 egyéb, a szellemi alkotásokra vonatkozó jogszabályi rendelkezések védelme alatt áll.
-- A személyes adatok kezelése az információs önrendelkezési jogról és az információszabadságról szóló
-2011. évi CXII. törvény rendelkezéseinek megfelelően történik.  
+- A személyes adatok kezelése az információs önrendelkezési jogról és az információszabadságról szóló 2011. évi CXII. törvény rendelkezéseinek megfelelően történik.  
 - A felhasználónak be kell tartania minden hazai előírást és szabályozást, amely az applikációra
 vonatkozik.  
 - A Felhasználó az applikációt vagy annak bármely részét nem adhatja kölcsön, nem ruházhatja át, nem
