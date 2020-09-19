@@ -58,7 +58,8 @@ Kotlin: Erősen típusos programozási nyelv, Java virtuális gépre és JavaScr
 Android: Az Android egy Linux alapú operációs rendszer, amely elsősorban mobil készülékek és tabletek részére készült.  
 Grafikus felhasználói felület: A felhasználó és a számítógép közti kommunikációt lehetővé tevő felület, amely szöveges parancsok és üzenetek helyett részben vagy teljesen grafikus elemek segítségével teszi lehetővé a vezérlést és a visszajelzést.  
 Offline: Offline szoftvereknek azokat az alkalmazásokat nevezzük, amelyek használatához nincs szükség internetre.  
-SQL: Relációs adatbáziskezelő, lekérdező nyelv. Az adatbázisban tárolt információk visszanyerésére szolgál, de rendelkezik néhány adatbeviteli és módosítási lehetöséggel is.
+SQL: Relációs adatbáziskezelő, lekérdező nyelv. Az adatbázisban tárolt információk visszanyerésére szolgál, de rendelkezik néhány adatbeviteli és módosítási lehetöséggel is.  
+Search box:Egy szövegmező,ahol a felhasználó megadhat egy szót/kifejezést,amire rá szeretne keresni az adatbázisban.  
 
 #### 9. Használati esetek
 [Használati eset diagram](https://github.com/vajkone/NoteTakingApp/blob/master/K%C3%A9pek/Note_takingUseCase.png)
