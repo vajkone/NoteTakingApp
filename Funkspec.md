@@ -64,4 +64,10 @@ SQL: Relációs adatbáziskezelő, lekérdező nyelv. Az adatbázisban tárolt i
 [Kép 1](https://github.com/vajkone/NoteTakingApp/blob/master/K%C3%A9pek/prototipus1.jpg)  
 [Kép 2](https://github.com/vajkone/NoteTakingApp/blob/master/K%C3%A9pek/prototipus2.jpg)  
 
+#### 11.Forgatókönyvek
+Jegyzet létrehozásához a felhasználónak a "+" gombot kell megnyomnia,ahonnan a jegyzet szerkesztő részéhez kerül.  
+A létrehozott jegyzetet a "SAVE NOTE" gombbal tudja elmenteni.  
+A már létező jegyzetek között görgetéssel,vagy egy search box-al tud keresni.  
+Egy adott jegyzetet az "X" gombbal tud törölni,a jegyzetek listájából.  
+
 
