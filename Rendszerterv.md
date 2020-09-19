@@ -25,7 +25,9 @@ megvalósítható. A projektben az alábbi szerepkörök betöltése szükséges
 		végső designtervet illetően, a tényleges projekt design-jának megvalósítása
 * Adatbázistervező: A projekthez tartozó teljes adatbázis létrehozásáért és megfelelő működéséért,
 		   valamint a programozó által igényelt lekérdezések megvalósításáért felelős. 
-* Programozó: A projektvezető által kijelölt programozási feladatok megoldásáért felelős
+* Programozó: A projektvezető által kijelölt programozási feladatok megoldásáért felelős  
+
+### 3. Üzleti Folyamatok
 
 ### 6. Fizikai környezet
 
