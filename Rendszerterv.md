@@ -14,7 +14,9 @@ Ugyan a rendszernek nem kifejezett célja, hogy jegyzetelési tanácsadóként s
 diákokat hogy egy helyes módszert használjanak és mivel az meglehetősen intuitív, ezért külön magyarázatot nem is igényel, a diákoknak nem
 kell hosszas magyarázatokat végighallgatniuk hogy ráérezzenek a módszer nyújtotta előnyökre. 
 
+
 2. Projekt terv:
+
   A rendszer létrehozásához rendelkezésre álló emberi erőforrások alapján a projekt a rendszerterv elfogadását követő két héten belül
 megvalósítható. A projektben az alábbi szerepkörök betöltése szükséges:
 
