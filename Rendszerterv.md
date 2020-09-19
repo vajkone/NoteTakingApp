@@ -27,4 +27,9 @@ megvalósítható. A projektben az alábbi szerepkörök betöltése szükséges
 		   valamint a programozó által igényelt lekérdezések megvalósításáért felelős. 
 * Programozó: A projektvezető által kijelölt programozási feladatok megoldásáért felelős
 
+### 6. Fizikai környezet
 
+Az általunk elgondolt applikáció az Android Studio fejlesztői környezetben készül. Android operációs rendszert futtató mobiltelefonokon, illetve tableteken érhető el.
+Minimum 5.0.0 verziójú vagy annál magasabb Android operációs rendszeren használható, jelenleg más mobil operációs rendszeren nem érhető el.  
+Ahogy a megrendelői követelményspecikációban is olvasható, a megrendelőnk kérése az volt, hogy az applikáció Java vagy Kotlin programozási nyelven íródjon. 
+Csapatunk a Kotlin mellett döntött, ugyanis a Kotlin az Android hivatalos nyelve, óriási fejlesztői közösség épül köré és sokkal több frissítés érhető el az Androidra Kotlinon keresztül. 
