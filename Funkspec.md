@@ -24,6 +24,21 @@ A megrendelő a [követelményspecifikációban](https://github.com/vajkone/Note
 * Jegyzetek csoportosítása és rendezése => kulcsszavak, címkék avagy dátum szerint lista nézetben  
 * Jegyzetek között való hatékony és gyors keresés kulcsszavakkal vagy dátum alapján  
 
+#### 5. A rendszerre vonatkozó külső megszorítások  
+- Az applikáció jelenleg Android, minimum 4.0.3 verziójú vagy annál magasabb Android operációs
+rendszeren érhető el. Az applikáció jelenleg más mobil operációs rendszeren nem érhető el.  
+- Az alkalmazás letöltése és használata díjmentes. Az alkalmazáson belül (inapp) sem találhatóak
+fizetéses elemek.  
+- Az applikáció és az alapjául szolgáló szoftvertermék a szerzői jogról szóló 1999. évi LXXVI. törvény és
+egyéb, a szellemi alkotásokra vonatkozó jogszabályi rendelkezések védelme alatt áll.
+- A személyes adatok kezelése az információs önrendelkezési jogról és az információszabadságról szóló
+2011. évi CXII. törvény rendelkezéseinek megfelelően történik.  
+- A felhasználónak be kell tartania minden hazai előírást és szabályozást, amely az applikációra
+vonatkozik.  
+- A Felhasználó az applikációt vagy annak bármely részét nem adhatja kölcsön, nem ruházhatja át, nem
+adhatja bérbe, sem más módon nem terjesztheti.  
+
+
 #### 7. Követelménylista
 K01 Az alkalmazás legyen egyszerű, könnyen kezelhető  
 K02 Letisztult, igényes grafikus felülettel rendelkezzen  
