@@ -1,7 +1,7 @@
 Rendszerterv a jegyzetelő alkalmazáshoz
 ---------------------------------------
 
-1. A rendszer célja:
+### 1. A rendszer célja:
 
    A rendszer célja hogy diákoknak egy olyan felületet biztosítson hordozható elektronikus eszközeiken (okostelefon ill. tablet)
 amelyet használva könnyen tudnak óráikon valamint előadásaikon jegyzetelni. A rendszer a világhírű Cornell metódust ültetné át
@@ -15,7 +15,7 @@ diákokat hogy egy helyes módszert használjanak és mivel az meglehetősen int
 kell hosszas magyarázatokat végighallgatniuk hogy ráérezzenek a módszer nyújtotta előnyökre. 
 
 
-2. Projekt terv:
+### 2. Projekt terv:
 
   A rendszer létrehozásához rendelkezésre álló emberi erőforrások alapján a projekt a rendszerterv elfogadását követő két héten belül
 megvalósítható. A projektben az alábbi szerepkörök betöltése szükséges:
