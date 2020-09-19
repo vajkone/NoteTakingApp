@@ -39,6 +39,7 @@ adhatja bérbe, sem más módon nem terjesztheti.
 
 
 #### 7. Követelménylista
+A megrendelő által összeállított követelménylistából az általunk elgondolt applikáció, az összes pontnak megfelel. Ezek a követelmények az alábbiak voltak:  
 K01 Az alkalmazás legyen egyszerű, könnyen kezelhető  
 K02 Letisztult, igényes grafikus felülettel rendelkezzen  
 K03 Ne tartalmazzon felesleges funkciókat  
