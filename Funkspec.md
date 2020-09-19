@@ -43,7 +43,7 @@ A megrendelő által összeállított követelménylistából az általunk elgon
 K01 Az alkalmazás legyen egyszerű, könnyen kezelhető  
 K02 Letisztult, igényes grafikus felülettel rendelkezzen  
 K03 Ne tartalmazzon felesleges funkciókat  
-K04 Az alkalmáz legyen offline  
+K04 Az alkalmazás legyen offline  
 K05 Az alkalmazás legyen alacsony rendszerigényű  
 K06 Ne férjen hozzá a telefonon lévő többi adathoz  
 K07 Ne függjön más alkalmazásoktól (Pl.: Google)  
@@ -60,7 +60,7 @@ Grafikus felhasználói felület: A felhasználó és a számítógép közti ko
 Offline: Offline szoftvereknek azokat az alkalmazásokat nevezzük, amelyek használatához nincs szükség internetre.  
 SQL: Relációs adatbáziskezelő, lekérdező nyelv. Az adatbázisban tárolt információk visszanyerésére szolgál, de rendelkezik néhány adatbeviteli és módosítási lehetöséggel is.
 
-#### 10.Képernyő tervek
+#### 10. Képernyő tervek
 [Kép 1](https://github.com/vajkone/NoteTakingApp/blob/master/K%C3%A9pek/prototipus1.jpg)  
 [Kép 2](https://github.com/vajkone/NoteTakingApp/blob/master/K%C3%A9pek/prototipus2.jpg)  
 
