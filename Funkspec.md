@@ -60,6 +60,9 @@ Grafikus felhasználói felület: A felhasználó és a számítógép közti ko
 Offline: Offline szoftvereknek azokat az alkalmazásokat nevezzük, amelyek használatához nincs szükség internetre.  
 SQL: Relációs adatbáziskezelő, lekérdező nyelv. Az adatbázisban tárolt információk visszanyerésére szolgál, de rendelkezik néhány adatbeviteli és módosítási lehetöséggel is.
 
+#### 9. Használati esetek
+[Használati eset diagram](https://github.com/vajkone/NoteTakingApp/blob/master/K%C3%A9pek/Note_takingUseCase.png)
+
 #### 10. Képernyő tervek
 [Kép 1](https://github.com/vajkone/NoteTakingApp/blob/master/K%C3%A9pek/prototipus1.jpg)  
 [Kép 2](https://github.com/vajkone/NoteTakingApp/blob/master/K%C3%A9pek/prototipus2.jpg)  
