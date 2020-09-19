@@ -39,7 +39,7 @@ Felvitt adatok tárolása lokálisan, SQL alapú adatbázisban.
 K01 Az alkalmazás legyen egyszerű, könnyen kezelhető  
 K02 Letisztult, igényes grafikus felülettel rendelkezzen  
 K03 Ne tartalmazzon felesleges funkciókat   
-K04 Az alkalmáz legyen offline  
+K04 Az alkalmazás legyen offline  
 K05 Az alkalmazás legyen alacsony rendszerigényű  
 K06 Ne férjen hozzá a telefonon lévő többi adathoz  
 K07 Ne függjön más alkalmazásoktól (Pl.: Google)
