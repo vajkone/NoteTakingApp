@@ -25,7 +25,7 @@ A megrendelő a [követelményspecifikációban](https://github.com/vajkone/Note
 * Jegyzetek között való hatékony és gyors keresés kulcsszavakkal vagy dátum alapján  
 
 #### 5. A rendszerre vonatkozó külső megszorítások  
-- Az applikáció jelenleg Android, minimum 4.0.3 verziójú vagy annál magasabb Android operációs
+- Az applikáció jelenleg Android, minimum 5.0.0 verziójú vagy annál magasabb Android operációs
 rendszeren érhető el. Az applikáció jelenleg más mobil operációs rendszeren nem érhető el.  
 - Az alkalmazás letöltése és használata díjmentes. Az alkalmazáson belül (inapp) sem találhatóak
 fizetéses elemek.  
