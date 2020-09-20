@@ -74,6 +74,28 @@ A megrendelőnk igényeit szem előtt tartva az applikációt úgy tervezzük me
 illetve tableten is probléma nélkül használható legyen.  
 A felvitt adatok tárolását lokálisan, SQL alapú adatbázisban valósítjuk meg.
 
+#### 7. Architekturális terv
+
+Az alkalmazás az MVC architektúrális tervezési mintát követi.  
+Eszerint a programunkat 3 részre osztjuk,a modellre,nézetre, és kontrollerre.  
+A modell része foglalkozik a programunk során keletkező adatok,és a köztük lévő kapcsolatok kezelésével.  
+Ide értjük a táblázatot,amiben a jegyzeteket kezeljük.  
+A nézet vagy angolul view,része a programunknak,a megjelenítéssel foglalkozik.  
+Ez fogja megjeleníteni a modellben kezelt adatokat.  
+A kontroller része a programnak a felhasználótól származó műveleteket fogja kezelni.  
+A felhasználó által adott parancsokat fogja a modellben létrehozni. Például ha a felhasználó kitöröl egy jegyzetet,
+akkor a kontroller fogja kitörölni az adott rekordot a táblából.  
+Tehát a felhasználó használja a kontrollert,a kontroller módosítja a modellt,a modell frissíti a nézetet amit majd a felhasználó látni fog.  
+A modell réteget kell változtatnunk,ha bármilyen változást szeretnénk majd a későbbiekben végrehajtani az adatbázisunk struktúráján.  
+A programunk úgy került kialakításra,hogy ez az esetleges változás a többi réteget ne érintse.  
+Az MVC tervezési minta sok előnnyel rendelkezik,ezekért is került a választásunk erre a mintára.  
+Egyidejűleg lehet fejleszteni,tehát többen tudunk egyszerre dolgozni a komponenseken.  
+Az elemek alapvetően nagy részben függetlenek egymástól,ezért könnyen változtathatóak.  
+Könnyen bővíthető is,mivel a felelősségek szét vannak osztva a komponensek között.  
+Az alkalmazásunk offline lesz,tehát az összes adatot az adott készüléken tárolja.  
+Ebből adódóan az alkalmazás védett lesz az online támadások alól.  
+Offline pedig a felhasználó készülékétől fogg fügni.  
+
 ### 8. Tesztterv  
 A tesztelés feladata az, hogy a szoftver használata során fellépő hibák előfordulását csökkentse, a szoftver megbízhatóságát növelje és a szabványoknak, előírásoknak való megfelelőségét biztosítsa.  A teszt végrehajtásáért a projekt menedzser felel és a tesztcsapat hajtja végre  
 
