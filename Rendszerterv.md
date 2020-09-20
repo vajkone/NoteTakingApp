@@ -74,6 +74,8 @@ A megrendelőnk igényeit szem előtt tartva az applikációt úgy tervezzük me
 illetve tableten is probléma nélkül használható legyen.  
 A felvitt adatok tárolását lokálisan, SQL alapú adatbázisban valósítjuk meg.
 
+#### 7. Architekturális terv
+
 #### 8. Tesztterv  
 A tesztelés feladata az, hogy a szoftver használata során fellépő hibák előfordulását csökkentse, a szoftver megbízhatóságát növelje és a szabványoknak, előírásoknak való megfelelőségét biztosítsa.  A teszt végrehajtásáért a projekt menedzser felel és a tesztcsapat hajtja végre  
 
