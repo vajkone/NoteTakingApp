@@ -91,10 +91,11 @@ Szükséges erőforrások:
 - internetelérés  
 
 Feladatkörök és felelősségek:  
-| Feladatkör |    Felelősség/tevékenység    |   Személy   |
-| Tesztelő |    A teszt végrehajtása    |             |
-| Tesztelő |    Az észrevételek dokumentálása    |             |
-| Tesztelő |    Teszt dokumentáció archiválása    |             |
+| Feladatkör       |    Felelősség/tevékenység    |   Személy   |
+|------------------|------------------------------|-------------|
+| Tesztelő         |    A teszt végrehajtása    |             |
+| Tesztelő         |    Az észrevételek dokumentálása    |             |
+| Tesztelő         |    Teszt dokumentáció archiválása    |             |
 | Szakértő |    A szakértő az észrevételek elemzi és megoldást javasol.    |      |
 | Teszt-koordinátor |    Teszt terv készítése    |      |
 | Teszt-koordinátor |    A tesztterv jóváhagyatása a     |      |
