@@ -64,6 +64,8 @@ Search box:Egy szövegmező,ahol a felhasználó megadhat egy szót/kifejezést,
 #### 9. Használati esetek
 [Használati eset diagram](https://github.com/vajkone/NoteTakingApp/blob/master/K%C3%A9pek/Note_takingUseCase.png)
 
+Ahogy az ábrán is látszik,a felhasználó képes lesz létrehozni jegyzeteket,böngészni, illetve keresni a jegyzetek között.
+
 #### 10. Képernyő tervek
 [Kép 1](https://github.com/vajkone/NoteTakingApp/blob/master/K%C3%A9pek/prototipus1.jpg)  
 [Kép 2](https://github.com/vajkone/NoteTakingApp/blob/master/K%C3%A9pek/prototipus2.jpg)  
