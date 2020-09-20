@@ -169,6 +169,32 @@ Tartalmazza kell:
 
 Az implementációs modell alapján készült.  
 
+### 11. Adatbázis terv 
+Az adatbázis két táblával megoldható. A Note tábla azonosítja az egyes jegyzeteket az adattáblában, annak
+TextId sora pedig egy idegen kulcs, ami magát a jegyzetek szövegét azonosítja. Erre azért van szükség mivel a Cornell
+jegyzetelési metódusnál a jegyzet szövege 3 külön részre bontódik: Kulcsszavak, a hozzájuk tartozó jegyzet, valamint
+összegzés. A TextId idegen kulcs nvarchar típusú, mivel ezt egy függvénnyel generáljuk majd, aminek egyik bemenete az adott Note Id-ja lesz és a sztring részét fogja képezni.
+Az adatbázis modell [itt](https://github.com/vajkone/NoteTakingApp/blob/master/K%C3%A9pek/NTA_dbm.png) tekinthető meg.
+
+Az adatbázist generáló SQL kód:
+
+```SQL
+create table Note (" +
+                "NoteId int PRIMARY KEY," +
+                "NoteTitle nvarchar(50) not null," +
+                "NoteLabel nvarchar(50)," +
+                "TextId nvarchar(50) not null," +
+                "NoteDate Date" +
+                "constraint nt_fk_ti foreign key(TextId) REFERENCES Text(TextId));
+
+
+create table Text (" +
+                "TextId nvarchar(50) primary key," +
+                "TextCue text,"+
+                "TextText text," +
+                "TextSummary text);
+```
+
 ### 12. Telepítési terv
 
 Az alkalmazást egy .apk kiterjesztésű telepítő fájllal bármilyen 5.0,vagy annál nagyobb verziószámú android operációs rendszerű eszközre telepíthető lesz.
