@@ -72,3 +72,9 @@ Csapatunk a Kotlin mellett döntött, ugyanis a Kotlin az Android hivatalos nyel
 A megrendelőnk igényeit szem előtt tartva az applikációt úgy tervezzük meg, hogy a rendszerigénye alacsony legyen, egy egyszerű alsó középkategóriás mobiltelefonon,
 illetve tableten is probléma nélkül használható legyen.  
 A felvitt adatok tárolását lokálisan, SQL alapú adatbázisban valósítjuk meg.
+
+### 12. Telepítési terv
+
+Az alkalmazást egy .apk kiterjesztésű telepítő fájllal bármilyen 5.0,vagy annál nagyobb verziószámú android operációs rendszerű eszközre telepíthető lesz.
+
+
