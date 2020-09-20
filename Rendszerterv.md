@@ -46,6 +46,8 @@ megvalósítható. A projektben az alábbi szerepkörök betöltése szükséges
 
 ### 3. Üzleti Folyamatok
 
+[BPMN folyamatábra](https://github.com/vajkone/NoteTakingApp/blob/master/K%C3%A9pek/BPMN.png)
+
 Ezzel az alkalmazással a papír alapú jegyzetelést szeretnénk kiváltani.  
 A papír helyett,a mobil eszközünkön tudunk kényelmesen jegyzeteket léterehozni,és ezeket kezelni.  
 Az egyetlen erőforrás amire szükség lesz, az a mobil készülék.  
