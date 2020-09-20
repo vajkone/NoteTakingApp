@@ -121,6 +121,8 @@ Unit tesztek elkészítése
 
 #### 9. Karbantartási terv  
 
+A szoftver rendszernek támogatnia kell az alábbi tevékenységeket:  
+
 * rendszeres biztonsági mentés  
 * meghibásodás esetén az utolsó konzisztens állapot visszaállítása  
 * rendszer frissítése  
