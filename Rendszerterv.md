@@ -46,6 +46,10 @@ megvalósítható. A projektben az alábbi szerepkörök betöltése szükséges
 
 ### 3. Üzleti Folyamatok
 
+### 4. Követelmények
+
+A megrendelői követelményspecifikációban leírtakat tudomásul véve az applikációt úgy tervezzük meg, hogy egyszerű, könnyen kezelhető legyen a felhasználó számára. Új jegyzetet egyszerűen, egy "hozzáad" gomb megnyomásával lehet felvenni. A gomb megnyomása után a jegyzetelő felületre kerülünk, ahol a "jegyzet mentése" gombbal a jegyzetet elmentjük. A jegyzetek egyszerűen kerülnek kilistázásra az applikáció kezdőképernyőjén. A korábban elmentett jegyzetre való kattintással lehet azokat szerkeszteni, illetve a jobb felső sarokban lévő X-re kattintva lehet törölni. Kulcsszavak, címkék avagy dátum szerint lista nézetben tudja a felhasználó jegyzeteit csoportosítani és rendezni. A jegyzetek között való gyors és hatékony keresést kulcsszavakkal vagy dátum alapján teheti meg a felhasználó.
+
 ### 6. Fizikai környezet
 
 Az általunk elgondolt applikáció az Android Studio fejlesztői környezetben készül. Android operációs rendszert futtató mobiltelefonokon, illetve tableteken érhető el.
