@@ -139,7 +139,7 @@ Cél:
 - Törekedni kell arra, hogy az elkészülő osztályok, modulok újrafelhasználhatóak legyenek. A már meglévő modulokat érdemes újra felhasználni.  
 - Keretrendszer kialakítása
 
-Tartalmaznia kell:   
+Tartalmazza kell:   
 - A forrásfájl komponensek megvalósításának sorrendjét  
 - A fordítások sorrendjét  
 
