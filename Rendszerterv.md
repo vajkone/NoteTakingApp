@@ -74,7 +74,43 @@ A megrendelőnk igényeit szem előtt tartva az applikációt úgy tervezzük me
 illetve tableten is probléma nélkül használható legyen.  
 A felvitt adatok tárolását lokálisan, SQL alapú adatbázisban valósítjuk meg.
 
-### 12. Telepítési terv
+#### 8. Tesztterv  
+A tesztelés feladata az, hogy a szoftver használata során fellépő hibák előfordulását csökkentse, a szoftver megbízhatóságát növelje és a szabványoknak, előírásoknak való megfelelőségét biztosítsa.  A teszt végrehajtásáért a projekt menedzser felel és a tesztcsapat hajtja végre  
+
+Elvárások a teszteléssel kapcsolatban:
+* A tesztprogram az ebben a dokumentumban meghatározott tesztterv alapján fut.  
+* Az this.BestTeam=true projektcsapat felelős a tesztadatok előállításáért.   
+* Az olvasó ismeri az alapdokumentumokat, amelyek meghatározzák a rendszert.  
+ 
+Szükséges erőforrások:  
+- 5.0,vagy annál nagyobb verziószámú android operációs rendszerű mobilkészülékek.  
+- Számítógépek android emulátorral ellátva  
+- klimatizált helyiség  
+- stabil áramellátás  
+- áramelosztó  
+- internetelérés  
+
+Feladatkörök és felelősségek:  
+| Feladatkör |    Felelősség/tevékenység    |   Személy   |
+| Tesztelő |    A teszt végrehajtása    |             |
+| Tesztelő |    Az észrevételek dokumentálása    |             |
+| Tesztelő |    Teszt dokumentáció archiválása    |             |
+| Szakértő |    A szakértő az észrevételek elemzi és megoldást javasol.    |      |
+| Teszt-koordinátor |    Teszt terv készítése    |      |
+| Teszt-koordinátor |    A tesztterv jóváhagyatása a     |      |
+| Teszt-koordinátor |    A tesztterv jóváhagyatása a projektmenedzserrel    |      |
+| Teszt-koordinátor |    Teszt forgatókönyvek létrehozása    |      |
+| Teszt-koordinátor |    Inkonzisztenciák kezelése    |      |
+| Teszt-koordinátor |    Helyes és időbeni hibakezelés    |      |
+| Teszt-koordinátor |    Szükség esetén problémák eszkalálása a projekt menedzsernek    |      |
+| Teszt-koordinátor |    Végső riport készítése    |      |
+| Teszt-koordinátor |    Teszt dokumentum archiválása    |      |
+| Teszt-koordinátor |    Az észrevételek státuszának követése, ill. dokumentálása    |      |
+| Projektvezető |    Teszt terv jóváhagyása    |             |
+| Projektvezető |    Teszt forgatókönyv (testscript)    |             |
+
+
+#### 12. Telepítési terv
 
 Az alkalmazást egy .apk kiterjesztésű telepítő fájllal bármilyen 5.0,vagy annál nagyobb verziószámú android operációs rendszerű eszközre telepíthető lesz.
 
