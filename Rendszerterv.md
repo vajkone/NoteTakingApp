@@ -76,7 +76,7 @@ A felvitt adatok tárolását lokálisan, SQL alapú adatbázisban valósítjuk 
 
 #### 7. Architekturális terv
 
-[MVC ábra] https://github.com/vajkone/NoteTakingApp/blob/master/K%C3%A9pek/VMC.png
+[MVC ábra] (https://github.com/vajkone/NoteTakingApp/blob/master/K%C3%A9pek/VMC.png)
 
 Az alkalmazás az MVC architektúrális tervezési mintát követi.  
 Eszerint a programunkat 3 részre osztjuk,a modellre,nézetre, és kontrollerre.  
