@@ -74,9 +74,7 @@ A megrendelőnk igényeit szem előtt tartva az applikációt úgy tervezzük me
 illetve tableten is probléma nélkül használható legyen.  
 A felvitt adatok tárolását lokálisan, SQL alapú adatbázisban valósítjuk meg.
 
-#### 7. Architekturális terv
-
-#### 8. Tesztterv  
+### 8. Tesztterv  
 A tesztelés feladata az, hogy a szoftver használata során fellépő hibák előfordulását csökkentse, a szoftver megbízhatóságát növelje és a szabványoknak, előírásoknak való megfelelőségét biztosítsa.  A teszt végrehajtásáért a projekt menedzser felel és a tesztcsapat hajtja végre  
 
 Elvárások a teszteléssel kapcsolatban:
@@ -121,7 +119,7 @@ Várt érték és a teszt álltal adott értékek összehasonlítása
 Teszt Szkriptek elkészítése (számítógépek által adott utasítások)
 Unit tesztek elkészítése   
 
-#### 9. Karbantartási terv  
+### 9. Karbantartási terv  
 
 A szoftver rendszernek támogatnia kell az alábbi tevékenységeket:  
 
@@ -133,8 +131,21 @@ A szoftver rendszernek támogatnia kell az alábbi tevékenységeket:
 * felhasználók igényeinek folyamatos figyelése és felmérése  
 * biztonsági beállítások folyamatos felülvizsgálata és szükség esetén korrigálásuk.  
 
+### 10. Implementációs terv  
 
-#### 12. Telepítési terv
+A Feladatokat a Kotlin programozási nyelven implementáljuk  
+Cél: 
+- Felkutatni, hogy a specifikáció nem megvalósítható, vagy ellentmondásos-e  
+- Törekedni kell arra, hogy az elkészülő osztályok, modulok újrafelhasználhatóak legyenek. A már meglévő modulokat érdemes újra felhasználni.  
+- Keretrendszer kialakítása
+
+Tartalmaznia kell:   
+- A forrásfájl komponensek megvalósításának sorrendjét  
+- A fordítások sorrendjét  
+
+Az implementációs modell alapján készült.  
+
+### 12. Telepítési terv
 
 Az alkalmazást egy .apk kiterjesztésű telepítő fájllal bármilyen 5.0,vagy annál nagyobb verziószámú android operációs rendszerű eszközre telepíthető lesz.
 Ehez engedélyezni kell az eszközön az ismeretlen forrásból származó alkalmazások telepítését.
