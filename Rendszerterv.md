@@ -46,6 +46,15 @@ megvalósítható. A projektben az alábbi szerepkörök betöltése szükséges
 
 ### 3. Üzleti Folyamatok
 
+Ezzel az alkalmazással a papír alapú jegyzetelést szeretnénk kiváltani.  
+A papír helyett,a mobil eszközünkön tudunk kényelmesen jegyzeteket léterehozni,és ezeket kezelni.  
+Az egyetlen erőforrás amire szükség lesz, az a mobil készülék.  
+A felhasználónak egy felhasználó barát környezetben lehetősége lesz jegyzeteket létrehozni,szerkeszteni,törölni.  
+Illetve ezek között a létrehozott jegyzetek közt keresni is.  
+A felhasználó egy gomb megnyomásával tud létrehozni egy jegyzetet,a gomb megnyomása után a szerkesztő felületre kerül.  
+Itt billentyűzet segítségével tud jegyzetelni. Majd ezt a jegyzetet el is tudja menteni.  
+A kereséshez használhat search boxot,vagy görgetést.A törléshez is egy külön gomb található minden adott jegyzetnél.  
+
 ### 4. Követelmények
 
 A megrendelői követelményspecifikációban leírtakat tudomásul véve az applikációt úgy tervezzük meg, hogy egyszerű, könnyen kezelhető legyen a felhasználó számára. Új jegyzetet egyszerűen, egy "hozzáad" gomb megnyomásával lehet felvenni. A gomb megnyomása után a jegyzetelő felületre kerülünk, ahol a "jegyzet mentése" gombbal a jegyzetet elmentjük. A jegyzetek egyszerűen kerülnek kilistázásra az applikáció kezdőképernyőjén. A korábban elmentett jegyzetre való kattintással lehet azokat szerkeszteni, illetve a jobb felső sarokban lévő X-re kattintva lehet törölni. Kulcsszavak, címkék avagy dátum szerint lista nézetben tudja a felhasználó jegyzeteit csoportosítani és rendezni. A jegyzetek között való gyors és hatékony keresést kulcsszavakkal vagy dátum alapján teheti meg a felhasználó.  
