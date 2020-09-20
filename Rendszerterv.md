@@ -195,7 +195,14 @@ create table Text (" +
                 "TextSummary text);
 ```
 
-### 12. Telepítési terv
+### 12. Funkcionális terv
+Az alkalmazás fő funkcionalítását egy egyszerű körforgás írja le: a felhasználó jegyzetet készít, amit egy gomb nyomásával az adatbázisba ment.
+Ezután a felhasználó böngészhet a már mentett jegyzetek listájában vagy kereshet köztük különböző paraméterek alapján, majd a kívánt jegyzetet
+megtekintheti az adott jegyzetre való bökéssel. Ekkor az adatbázisból betöltődik a megtekintendő jegyzet. 
+Az ezt bemutató szekvencia diagram [itt]() tekinthető meg.  
+A jegyzetelő felület egy képernyőterve [itt](https://github.com/vajkone/NoteTakingApp/blob/master/K%C3%A9pek/prototipus2.jpg), míg a már mentett jegyzetek listájáról egy terve [itt](https://github.com/vajkone/NoteTakingApp/blob/master/K%C3%A9pek/prototipus1.jpg) látható. 
+
+### 13. Telepítési terv
 
 Az alkalmazást egy .apk kiterjesztésű telepítő fájllal bármilyen 5.0,vagy annál nagyobb verziószámú android operációs rendszerű eszközre telepíthető lesz.
 Ehez engedélyezni kell az eszközön az ismeretlen forrásból származó alkalmazások telepítését.
