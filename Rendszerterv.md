@@ -27,6 +27,23 @@ megvalósítható. A projektben az alábbi szerepkörök betöltése szükséges
 		   valamint a programozó által igényelt lekérdezések megvalósításáért felelős. 
 * Programozó: A projektvezető által kijelölt programozási feladatok megoldásáért felelős  
 
+##### Ütemterv
+   | Fő feladatok     |Részfeladat| Prioritás     |Becslés|Eltelt idő|Hátralévő idő  |
+   | -----------------|----------|:-------------:| -----|---------|-----------|
+   | Adatbázis |Adatbázis létrehozása| Magas | 4-6 óra |          |  6 óra          |
+   | Adatbázis |CRUD funkcionalitás implementálása| Magas | 6-8 óra |          |  8 óra          |
+   | Adatbázis          |Specifikus lekérdező funkciók           |Magas       |   4-6 óra |          |    6 óra        |
+   | Programozói feladatok |Modell osztályok létrehozása| Közepes | 4-6 óra |          |  6 óra          |
+   | UI     |  UI létrehozása         |  Közepes     | 6-8 óra     |          |   8 óra         |
+   | UI     |  Controller osztályok       |  Magas     | 3-4 óra     |          |   4 óra         |
+   | UI     |  UI elemek funkcionalitása        |  Magas     | 4-6 óra     |          |   6 óra         |
+   | UI     |  Reszponzív design       |  Alacsony     | 3-4 óra     |          |   4 óra         |
+   | Tesztelés     |  Tesztelés       |  Magas     | 3-4 óra     |          |   4 óra         |
+   | Kényelmi funkciók     |  Létrehozás és tesztelés       |  Alacsony     | 6-8 óra     |          |   8 óra         |
+   
+   
+	
+
 ### 3. Üzleti Folyamatok
 
 ### 6. Fizikai környezet
