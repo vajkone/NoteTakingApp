@@ -119,8 +119,20 @@ Várt érték és a teszt álltal adott értékek összehasonlítása
 Teszt Szkriptek elkészítése (számítógépek által adott utasítások)
 Unit tesztek elkészítése   
 
+#### 9. Karbantartási terv  
+
+* rendszeres biztonsági mentés  
+* meghibásodás esetén az utolsó konzisztens állapot visszaállítása  
+* rendszer frissítése  
+* általános átvizsgálás során észlelt hibák javítása  
+* bejelentések során érkezett hibák javítása  
+* felhasználók igényeinek folyamatos figyelése és felmérése  
+* biztonsági beállítások folyamatos felülvizsgálata és szükség esetén korrigálásuk.  
+
+
 #### 12. Telepítési terv
 
 Az alkalmazást egy .apk kiterjesztésű telepítő fájllal bármilyen 5.0,vagy annál nagyobb verziószámú android operációs rendszerű eszközre telepíthető lesz.
+Ehez engedélyezni kell az eszközön az ismeretlen forrásból származó alkalmazások telepítését.
 
 
