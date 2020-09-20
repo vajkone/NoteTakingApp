@@ -49,7 +49,8 @@ megvalósítható. A projektben az alábbi szerepkörök betöltése szükséges
 ### 4. Követelmények
 
 A megrendelői követelményspecifikációban leírtakat tudomásul véve az applikációt úgy tervezzük meg, hogy egyszerű, könnyen kezelhető legyen a felhasználó számára. Új jegyzetet egyszerűen, egy "hozzáad" gomb megnyomásával lehet felvenni. A gomb megnyomása után a jegyzetelő felületre kerülünk, ahol a "jegyzet mentése" gombbal a jegyzetet elmentjük. A jegyzetek egyszerűen kerülnek kilistázásra az applikáció kezdőképernyőjén. A korábban elmentett jegyzetre való kattintással lehet azokat szerkeszteni, illetve a jobb felső sarokban lévő X-re kattintva lehet törölni. Kulcsszavak, címkék avagy dátum szerint lista nézetben tudja a felhasználó jegyzeteit csoportosítani és rendezni. A jegyzetek között való gyors és hatékony keresést kulcsszavakkal vagy dátum alapján teheti meg a felhasználó.  
-Megrendelőnk kérését, miszerint az applikáció rendszerigénye legyen alacsony, teljes mértékben teljesítjük. Az applikáció egy egyszerű alsó középkategóriás mobiltelefonon, illetve tableten is probléma nélkül használható. Az applikáció grafikus felhasználói felületét úgy tervezzük meg, hogy letisztult, igényes legyen.
+Megrendelőnk kérését, miszerint az applikáció rendszerigénye legyen alacsony, teljes mértékben teljesítjük. Az applikáció egy egyszerű alsó középkategóriás mobiltelefonon, illetve tableten is probléma nélkül használható. Az applikáció grafikus felhasználói felületét úgy tervezzük meg, hogy letisztult, igényes legyen.  
+A megrendelőnk igényeit szem előtt tartva az applikáció nem fér hozzá az eszközön lévő többi adathoz, valamint nem függ más alkalmazásoktól. Az applikáció elérhető offline módban, azaz a felhasználónak nincs szüksége internetkapcsolatra az applikáció használatához.
 
 ### 6. Fizikai környezet
 
