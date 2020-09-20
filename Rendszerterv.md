@@ -33,5 +33,8 @@ megvalósítható. A projektben az alábbi szerepkörök betöltése szükséges
 
 Az általunk elgondolt applikáció az Android Studio fejlesztői környezetben készül. Android operációs rendszert futtató mobiltelefonokon, illetve tableteken érhető el.
 Minimum 5.0.0 verziójú vagy annál magasabb Android operációs rendszeren használható, jelenleg más mobil operációs rendszeren nem érhető el.  
-Ahogy a megrendelői követelményspecikációban is olvasható, a megrendelőnk kérése az volt, hogy az applikáció Java vagy Kotlin programozási nyelven íródjon. 
-Csapatunk a Kotlin mellett döntött, ugyanis a Kotlin az Android hivatalos nyelve, óriási fejlesztői közösség épül köré és sokkal több frissítés érhető el az Androidra Kotlinon keresztül. 
+Ahogy a megrendelői [követelményspecifikációban](https://github.com/vajkone/NoteTakingApp/blob/master/k%C3%B6vspec.md#5-a-rendszerre-vonatkoz%C3%B3-szab%C3%A1lyok) is olvasható, a megrendelőnk kérése az volt, hogy az applikáció Java vagy Kotlin programozási nyelven íródjon. 
+Csapatunk a Kotlin mellett döntött, ugyanis a Kotlin az Android hivatalos nyelve, óriási fejlesztői közösség épül köré és sokkal több frissítés érhető el az Androidra Kotlinon keresztül.  
+A megrendelőnk igényeit szem előtt tartva az applikációt úgy tervezzük meg, hogy a rendszerigénye alacsony legyen, egy egyszerű alsó középkategóriás mobiltelefonon,
+illetve tableten is probléma nélkül használható legyen.  
+A felvitt adatok tárolását lokálisan, SQL alapú adatbázisban valósítjuk meg.
