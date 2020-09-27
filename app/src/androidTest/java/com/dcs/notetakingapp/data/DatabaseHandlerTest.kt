@@ -5,12 +5,14 @@ import android.os.Build.VERSION_CODES.LOLLIPOP
 import androidx.test.InstrumentationRegistry.getTargetContext
 import androidx.test.platform.app.InstrumentationRegistry
 import com.dcs.notetakingapp.model.Note
-import com.dcs.notetakingapp.test.BuildConfig
+
 import org.junit.After
 import org.junit.Before
 import org.junit.Test
 import org.junit.jupiter.api.Assertions.*
+import java.util.*
 import kotlin.concurrent.fixedRateTimer
+import kotlin.collections.ArrayList as ArrayList1
 
 //import org.junit.runner.RunWith
 //import org.robolectric.RobolectricTestRunner
@@ -116,6 +118,32 @@ internal class DatabaseHandlerTest {
         dbhandler.createNote(note1)
         assertEquals("Test",dbhandler.getNoteByID(1).noteTitle)
 
+    }
+
+    @Test
+    fun searchNotesByTitle(){
+        val dbhandler= DatabaseHandler(instrumentationContext)
+        val note1= Note()
+        note1.noteID=1
+        note1.noteTitle="Test"
+        note1.noteText_ID="asd"
+        dbhandler.createNote(note1)
+        val note2= Note()
+        note2.noteID=2
+        note2.noteTitle = "asd2"
+        note2.noteText_ID = "sds"
+        dbhandler.createNote(note2)
+        val note3 = Note()
+        note3.noteID=3
+        note3.noteTitle = "asd2"
+        note3.noteText_ID= "c"
+        dbhandler.createNote(note3)
+        val list = dbhandler.searchNotesByTitle("Test")
+        assertTrue(list.size==1)
+        val list2 = dbhandler.searchNotesByTitle("c")
+        assertTrue(list2.size==0)
+        val list3 = dbhandler.searchNotesByTitle("asd2")
+        assertTrue(list3.size == 2)
     }
 
     @After
