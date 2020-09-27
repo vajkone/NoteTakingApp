@@ -1,7 +1,8 @@
-package com.dcs.notetakingapp
+package com.dcs.notetakingapp.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.dcs.notetakingapp.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
