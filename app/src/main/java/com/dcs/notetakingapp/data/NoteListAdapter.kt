@@ -112,4 +112,9 @@ class NoteListAdapter(private var list: MutableList<Note>, private val context: 
     fun sortByDateReversed(){
         list.reverse()
     }
+
+    fun getDefaultList() {
+        val dbhandler=DatabaseHandler(context)
+        list=dbhandler.getAllNotes()
+    }
 }

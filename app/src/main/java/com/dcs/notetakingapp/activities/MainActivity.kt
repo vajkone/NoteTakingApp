@@ -102,6 +102,11 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        defaultList.setOnClickListener {
+            noteListAdapter!!.getDefaultList()
+            noteListAdapter!!.notifyDataSetChanged()
+        }
+
     }
 
     fun onSearchClicked(v: View){
