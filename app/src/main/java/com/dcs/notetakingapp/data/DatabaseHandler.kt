@@ -72,4 +72,55 @@ class DatabaseHandler(context: Context): SQLiteOpenHelper(context, DATABSE_NAME,
 
 
     }
+
+    fun getNoteByID(id: Int): Note {
+        val db:  SQLiteDatabase = readableDatabase
+
+        val countQuery = "SELECT * FROM $NOTE_TABLE_NAME where $NOTE_KEY_ID=$id"
+        val cursor: Cursor = db.rawQuery(countQuery,null)
+        val note = Note()
+        if (cursor.moveToFirst()) {
+
+
+
+            note.noteID = cursor.getInt(cursor.getColumnIndex(NOTE_KEY_ID))
+            note.noteTitle = cursor.getString(cursor.getColumnIndex(NOTE_TITLE))
+            note.noteLabel = cursor.getString(cursor.getColumnIndex(NOTE_LABEL))
+            note.noteDate = cursor.getString(cursor.getColumnIndex(NOTE_DATE))
+            note.noteText_ID=cursor.getString(cursor.getColumnIndex(NOTE_TEXT_ID))
+
+
+        }
+
+
+
+        cursor.close()
+        return note
+    }
+
+    fun getNoteTextByID(noteTextId: String?): NoteText {
+
+        val db:  SQLiteDatabase = readableDatabase
+
+        val countQuery = "SELECT * FROM $NOTETEXT_TABLE_NAME where $NOTETEXT_TEXT_ID='$noteTextId'"
+        val cursor: Cursor = db.rawQuery(countQuery,null)
+        val noteText = NoteText()
+        if (cursor.moveToFirst()) {
+
+
+
+            noteText.noteText_Id = cursor.getString(cursor.getColumnIndex(NOTETEXT_TEXT_ID))
+            noteText.noteText_text = cursor.getString(cursor.getColumnIndex(NOTETEXT_TEXT))
+            noteText.noteText_cue = cursor.getString(cursor.getColumnIndex(NOTETEXT_CUE))
+            noteText.noteText_summary = cursor.getString(cursor.getColumnIndex(NOTETEXT_SUMMARY))
+
+
+        }
+
+
+
+        cursor.close()
+        return noteText
+
+    }
 }
