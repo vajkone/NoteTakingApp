@@ -55,7 +55,7 @@ class NoteCreationActivity : AppCompatActivity() {
             if (exists){
                 updateNote()
             }else {
-
+                createNote()
             }
 
         }
