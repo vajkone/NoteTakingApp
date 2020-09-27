@@ -21,6 +21,8 @@ class MainActivity : AppCompatActivity() {
     private var dbHandler: DatabaseHandler? = null
     private var noteList: MutableList<Note>? = null
     private var noteListItems: ArrayList<Note>? = null
+    private var view: View? = null
+    private var dialog: AlertDialog? = null
 
     @SuppressLint("ResourceType")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -58,6 +60,17 @@ class MainActivity : AppCompatActivity() {
         addNewNote.setOnClickListener {
             val intent = Intent(this,NoteCreationActivity::class.java)
             startActivityForResult(intent,1)
+        }
+
+        search.setOnClickListener {
+
+            view = View.inflate(this, R.layout.search_card, null)
+            val builder = AlertDialog.Builder(this)
+            builder.setView(view)
+
+            dialog = builder.create()
+            dialog!!.show()
+            dialog!!.window?.setBackgroundDrawableResource(android.R.color.transparent)
         }
 
     }
