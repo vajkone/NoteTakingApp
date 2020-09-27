@@ -72,4 +72,30 @@ class DatabaseHandler(context: Context): SQLiteOpenHelper(context, DATABSE_NAME,
 
 
     }
+
+    fun updateNote(newNote: Note) {
+        val db:  SQLiteDatabase = writableDatabase
+        val id=newNote.noteID
+        val newtitle=newNote.noteTitle
+        val newnotelabel=newNote.noteLabel
+
+        val update="UPDATE $NOTE_TABLE_NAME SET $NOTE_TITLE = '$newtitle',$NOTE_LABEL='$newnotelabel' WHERE $NOTE_KEY_ID=$id"
+        db.execSQL(update)
+        db.close()
+
+    }
+
+
+    fun updateNoteText(newNoteText: NoteText) {
+        val db:SQLiteDatabase = writableDatabase
+        val id = newNoteText.noteText_Id
+        val newcue= newNoteText.noteText_cue
+        val newtext = newNoteText.noteText_text
+        val newsummary=newNoteText.noteText_summary
+
+        val update = "UPDATE $NOTETEXT_TABLE_NAME SET $NOTETEXT_CUE = '$newcue',$NOTETEXT_TEXT='$newtext',$NOTETEXT_SUMMARY='$newsummary' WHERE $NOTETEXT_TEXT_ID='$id'"
+        db.execSQL(update)
+        db.close()
+
+    }
 }
