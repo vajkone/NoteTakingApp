@@ -186,6 +186,65 @@ internal class DatabaseHandlerTest {
         assertTrue(list6.size == 2)
     }
 
+    @Test
+    fun searchNotesByText(){
+        val dbhandler= DatabaseHandler(instrumentationContext)
+        val notet= NoteText()
+        val note= Note()
+
+        note.noteText_ID = "a"
+        note.noteTitle = "asd2"
+        note.noteLabel= "just"
+        note.noteText_ID= "a"
+
+        dbhandler.createNote(note)
+
+
+        notet.noteText_text = "Valami"
+        notet.noteText_Id = "a"
+        notet.noteText_cue = "aaa"
+        notet.noteText_summary = "aksjd"
+
+        dbhandler.createNoteText(notet)
+        val notet2= NoteText()
+        val note2= Note()
+
+        note2.noteText_ID = "a1"
+        note2.noteTitle = "asd2"
+        note2.noteLabel= "just"
+
+        dbhandler.createNote(note2)
+        notet2.noteText_text="Valami"
+        notet2.noteText_Id = "a1"
+        notet2.noteText_cue = "aaa"
+        notet2.noteText_summary = "aksjd"
+
+        dbhandler.createNoteText(notet2)
+
+        val notet3 = NoteText()
+        val note3= Note()
+
+        note3.noteText_ID = "a2"
+        note3.noteTitle = "asd2"
+        note3.noteLabel= "just"
+
+
+        dbhandler.createNote(note3)
+        notet3.noteText_text="ne"
+        notet3.noteText_Id = "a2"
+        notet3.noteText_cue = "aaa"
+        notet3.noteText_summary = "aksjd"
+
+        dbhandler.createNoteText(notet3)
+        val list4 = dbhandler.searchNotesByText("ne")
+        assertTrue(list4.size==1)
+        val list5 = dbhandler.searchNotesByText("s")
+        assertTrue(list5.size==0)
+        val list6 = dbhandler.searchNotesByText("Valami")
+        assertTrue(list6.size == 2)
+    }
+
+
 
     @After
     fun tearDown(){
