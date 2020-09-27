@@ -306,4 +306,6 @@ class DatabaseHandler(context: Context): SQLiteOpenHelper(context, DATABSE_NAME,
         db.execSQL("DELETE FROM $NOTETEXT_TABLE_NAME where $NOTETEXT_TEXT_ID='$id'")
         db.close()
     }
+
+
 }

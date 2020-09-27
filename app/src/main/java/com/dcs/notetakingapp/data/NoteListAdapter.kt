@@ -76,4 +76,24 @@ class NoteListAdapter(private var list: MutableList<Note>, private val context: 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bindNote(list[position])
     }
+
+    fun searchByKeywords(title: String,label:String,text:String){
+        list.clear()
+        val dbhandler=DatabaseHandler(context)
+        var listofnotesbytitle= ArrayList<Note>()
+        var listofnotesbylabel= ArrayList<Note>()
+        var listofnotesbytext= ArrayList<Note>()
+        if (!title.isBlank()){
+            listofnotesbytitle=dbhandler.searchNotesByTitle(title)
+            list.plusAssign(listofnotesbytitle)
+        }
+        if (!label.isBlank()){
+            listofnotesbylabel=dbhandler.searchNotesByLabel(label)
+            list.plusAssign(listofnotesbylabel)
+        }
+        if (!text.isBlank()){
+            listofnotesbytext=dbhandler.searchNotesByText(text)
+            list.plusAssign(listofnotesbytext)
+        }
+    }
 }
