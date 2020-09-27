@@ -26,6 +26,8 @@ class MainActivity : AppCompatActivity() {
     private var noteListItems: ArrayList<Note>? = null
     private var view: View? = null
     private var dialog: AlertDialog? = null
+    private var sorted: Boolean = false
+    private var sortedByDate: Boolean = false
 
     @SuppressLint("ResourceType")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -74,6 +76,30 @@ class MainActivity : AppCompatActivity() {
             dialog = builder.create()
             dialog!!.show()
             dialog!!.window?.setBackgroundDrawableResource(android.R.color.transparent)
+        }
+
+        dateBtn.setOnClickListener{
+            sortedByDate = if (sortedByDate) {
+                noteListAdapter!!.sortByDate()
+                noteListAdapter!!.notifyDataSetChanged()
+                true
+            } else {
+                noteListAdapter!!.sortByDateReversed()
+                noteListAdapter!!.notifyDataSetChanged()
+                false
+            }
+        }
+
+        alphaBtn.setOnClickListener {
+            if (!sorted) {
+                noteListAdapter!!.sortByTitle()
+                sorted = true
+                noteListAdapter!!.notifyDataSetChanged()
+            } else {
+                noteListAdapter!!.sortByTitleReversed()
+                noteListAdapter!!.notifyDataSetChanged()
+                sorted = false
+            }
         }
 
     }
