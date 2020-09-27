@@ -146,6 +146,7 @@ internal class DatabaseHandlerTest {
         note3.noteID=3
         note3.noteTitle = "asd2"
         note3.noteText_ID= "c"
+
         dbhandler.createNote(note3)
         val list = dbhandler.searchNotesByTitle("Test")
         assertTrue(list.size==1)
@@ -154,6 +155,37 @@ internal class DatabaseHandlerTest {
         val list3 = dbhandler.searchNotesByTitle("asd2")
         assertTrue(list3.size == 2)
     }
+
+    @Test
+    fun searchNotesByLabel(){
+        val dbhandler= DatabaseHandler(instrumentationContext)
+        val note1= Note()
+        note1.noteID=1
+        note1.noteTitle="Test"
+        note1.noteLabel="test"
+        note1.noteText_ID = "a"
+        dbhandler.createNote(note1)
+        val note2= Note()
+        note2.noteID=2
+        note2.noteTitle = "asd2"
+        note2.noteLabel = "test"
+        note2.noteText_ID= "a"
+        dbhandler.createNote(note2)
+        val note3 = Note()
+        note3.noteID=3
+        note3.noteTitle = "asd2"
+        note3.noteLabel= "just"
+        note3.noteText_ID = "a"
+
+        dbhandler.createNote(note3)
+        val list4 = dbhandler.searchNotesByLabel("just")
+        assertTrue(list4.size==1)
+        val list5 = dbhandler.searchNotesByLabel("a")
+        assertTrue(list5.size==0)
+        val list6 = dbhandler.searchNotesByLabel("test")
+        assertTrue(list6.size == 2)
+    }
+
 
     @After
     fun tearDown(){
