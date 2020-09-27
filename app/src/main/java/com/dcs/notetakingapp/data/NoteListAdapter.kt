@@ -1,6 +1,8 @@
 package com.dcs.notetakingapp.data
 
+import android.app.AlertDialog
 import android.content.Context
+import android.content.DialogInterface
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
@@ -16,6 +18,8 @@ class NoteListAdapter(private var list: MutableList<Note>, private val context: 
 
     inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
 
+        private var dbhandler=DatabaseHandler(context)
+
         fun bindNote(note: Note){
 
             val noteTitle = itemView.findViewById(R.id.noteTitle) as TextView
@@ -27,6 +31,26 @@ class NoteListAdapter(private var list: MutableList<Note>, private val context: 
             noteLabel.text=note.noteLabel
             noteDate.text=note.noteDate
 
+            noteDeleteButton.setOnClickListener {
+
+                val builder = AlertDialog.Builder(context)
+                builder.setMessage("Are you sure you want to Delete?")
+                    .setTitle("Warning!")
+                    .setPositiveButton("Yes", DialogInterface.OnClickListener{ dialog, wich ->
+                        dbhandler.removeNotetextById(note.noteText_ID!!)
+                        dbhandler.removeNoteById(note.noteID!!)
+                        val a = adapterPosition
+                        list.removeAt(a)
+                        notifyItemRemoved(adapterPosition)
+                    })
+                    .setNegativeButton("Cancel", DialogInterface.OnClickListener{ dialog, wich ->
+                        // User cancelled the dialog
+                    })
+                    .show()
+
+                builder.create()
+
+            }
 
             itemView.setOnClickListener {
 

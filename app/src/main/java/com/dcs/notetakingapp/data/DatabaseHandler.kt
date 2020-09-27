@@ -211,4 +211,99 @@ class DatabaseHandler(context: Context): SQLiteOpenHelper(context, DATABSE_NAME,
         return noteText
 
     }
+
+    fun searchNotesByTitle(title: String):ArrayList<Note> {
+
+        val db:  SQLiteDatabase = readableDatabase
+
+        val query = "SELECT * FROM $NOTE_TABLE_NAME where $NOTE_TITLE LIKE '%$title%'"
+        val cursor: Cursor = db.rawQuery(query,null)
+        val list=ArrayList<Note>()
+
+        if (cursor.moveToFirst()) {
+            do {
+                val note = Note()
+                note.noteID = cursor.getInt(cursor.getColumnIndex(NOTE_KEY_ID))
+                note.noteTitle = cursor.getString(cursor.getColumnIndex(NOTE_TITLE))
+                note.noteLabel = cursor.getString(cursor.getColumnIndex(NOTE_LABEL))
+                note.noteDate = cursor.getString(cursor.getColumnIndex(NOTE_DATE))
+                note.noteText_ID=cursor.getString(cursor.getColumnIndex(NOTE_TEXT_ID))
+
+                list.add(note)
+            }while (cursor.moveToNext())
+
+        }
+        cursor.close()
+        return list
+
+
+    }
+
+    fun searchNotesByLabel(label: String):ArrayList<Note> {
+
+        val db:  SQLiteDatabase = readableDatabase
+
+        val query = "SELECT * FROM $NOTE_TABLE_NAME where $NOTE_TITLE LIKE '%$label%'"
+        val cursor: Cursor = db.rawQuery(query,null)
+        val list=ArrayList<Note>()
+
+        if (cursor.moveToFirst()) {
+            do {
+                val note = Note()
+                note.noteID = cursor.getInt(cursor.getColumnIndex(NOTE_KEY_ID))
+                note.noteTitle = cursor.getString(cursor.getColumnIndex(NOTE_TITLE))
+                note.noteLabel = cursor.getString(cursor.getColumnIndex(NOTE_LABEL))
+                note.noteDate = cursor.getString(cursor.getColumnIndex(NOTE_DATE))
+                note.noteText_ID=cursor.getString(cursor.getColumnIndex(NOTE_TEXT_ID))
+
+                list.add(note)
+            }while (cursor.moveToNext())
+
+        }
+        cursor.close()
+        return list
+
+
+    }
+
+    fun searchNotesByText(text: String):ArrayList<Note> {
+
+        val db:  SQLiteDatabase = readableDatabase
+
+        val query = "SELECT * FROM $NOTE_TABLE_NAME nt inner join $NOTETEXT_TABLE_NAME ntt on " +
+                "nt.$NOTE_TEXT_ID = ntt.$NOTETEXT_TEXT_ID where $NOTETEXT_TEXT LIKE '%$text%'"
+        val cursor: Cursor = db.rawQuery(query,null)
+        val list=ArrayList<Note>()
+
+        if (cursor.moveToFirst()) {
+            do {
+                val note = Note()
+                note.noteID = cursor.getInt(cursor.getColumnIndex(NOTE_KEY_ID))
+                note.noteTitle = cursor.getString(cursor.getColumnIndex(NOTE_TITLE))
+                note.noteLabel = cursor.getString(cursor.getColumnIndex(NOTE_LABEL))
+                note.noteDate = cursor.getString(cursor.getColumnIndex(NOTE_DATE))
+                note.noteText_ID=cursor.getString(cursor.getColumnIndex(NOTE_TEXT_ID))
+
+                list.add(note)
+            }while (cursor.moveToNext())
+
+        }
+        cursor.close()
+        return list
+
+
+    }
+
+    fun removeNoteById(id: Int) {
+        val db:  SQLiteDatabase = writableDatabase
+
+        db.execSQL("DELETE FROM $NOTE_TABLE_NAME where $NOTE_KEY_ID=$id")
+        db.close()
+    }
+
+    fun removeNotetextById(id: String) {
+        val db:  SQLiteDatabase = writableDatabase
+        db.execSQL("DELETE FROM $NOTETEXT_TABLE_NAME where $NOTETEXT_TEXT_ID='$id'")
+        db.close()
+    }
 }
