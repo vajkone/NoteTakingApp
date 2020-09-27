@@ -1,5 +1,7 @@
 package com.dcs.notetakingapp.activities
 
+import android.app.Activity
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -44,5 +46,36 @@ class NoteCreationActivity : AppCompatActivity() {
             noteTextSummary.setText(noteText.noteText_summary, TextView.BufferType.EDITABLE)
 
         }
+
+        saveNote.setOnClickListener {
+//
+            if (exists){
+                updateNote()
+            }else {
+
+            }
+
+        }
+    }
+
+    private fun updateNote() {
+        val newNote=Note()
+
+        newNote.noteID=noteID
+        newNote.noteText_ID=noteTextId
+        newNote.noteLabel=noteLabels.text.toString()
+        newNote.noteTitle=noteTitle.text.toString()
+
+        dbHandler!!.updateNote(newNote)
+
+        val newNoteText=NoteText()
+        newNoteText.noteText_Id=noteTextId
+        newNoteText.noteText_text=noteTextText.text.toString()
+        newNoteText.noteText_cue=noteTextCue.text.toString()
+        newNoteText.noteText_summary=noteTextSummary.text.toString()
+        dbHandler!!.updateNoteText(newNoteText)
+        val returnIntent = Intent()
+        setResult(Activity.RESULT_OK, returnIntent)
+        finish()
     }
 }
