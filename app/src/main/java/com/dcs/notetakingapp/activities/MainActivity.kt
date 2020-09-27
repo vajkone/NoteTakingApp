@@ -1,8 +1,11 @@
 package com.dcs.notetakingapp.activities
 
 import android.annotation.SuppressLint
+import android.app.AlertDialog
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import com.dcs.notetakingapp.R
 import com.dcs.notetakingapp.data.DatabaseHandler
 import com.dcs.notetakingapp.data.NoteListAdapter
@@ -51,6 +54,12 @@ class MainActivity : AppCompatActivity() {
 
             noteListAdapter!!.notifyDataSetChanged()
         }
+
+        addNewNote.setOnClickListener {
+            val intent = Intent(this,NoteCreationActivity::class.java)
+            startActivityForResult(intent,1)
+        }
+
     }
 
 

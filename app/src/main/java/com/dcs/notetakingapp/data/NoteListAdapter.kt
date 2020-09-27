@@ -1,12 +1,14 @@
 package com.dcs.notetakingapp.data
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.dcs.notetakingapp.R
+import com.dcs.notetakingapp.activities.NoteCreationActivity
 import com.dcs.notetakingapp.model.Note
 
 class NoteListAdapter(private var list: MutableList<Note>, private val context: Context):
@@ -24,6 +26,16 @@ class NoteListAdapter(private var list: MutableList<Note>, private val context: 
             noteTitle.text=note.noteTitle
             noteLabel.text=note.noteLabel
             noteDate.text=note.noteDate
+
+
+            itemView.setOnClickListener {
+
+                val intent = Intent(context, NoteCreationActivity::class.java)
+                intent.putExtra("noteTextId",note.noteText_ID)
+                intent.putExtra("noteId",note.noteID)
+                context.startActivity(intent)
+
+            }
 
         }
 
