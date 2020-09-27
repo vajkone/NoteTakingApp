@@ -1,6 +1,8 @@
 package com.dcs.notetakingapp.activities
 
 import android.app.Activity
+import android.app.AlertDialog
+import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -123,4 +125,26 @@ class NoteCreationActivity : AppCompatActivity() {
         setResult(Activity.RESULT_OK, returnIntent)
         finish()
     }
+
+    override fun onBackPressed() {
+        val builder = AlertDialog.Builder(this)
+        builder.setMessage("Do you want to save it?")
+            .setTitle("Warning!")
+            .setPositiveButton("Yes", DialogInterface.OnClickListener{ dialog, wich ->
+                if (exists){
+                    updateNote()
+                }else{
+                    createNote()
+                }
+            })
+            .setNegativeButton("No", DialogInterface.OnClickListener{ dialog, wich ->
+                setResult(Activity.RESULT_CANCELED, intent)
+                finish()
+            })
+            .show()
+
+        builder.create()
+
+    }
+
 }
