@@ -10,6 +10,8 @@ import org.junit.After
 import org.junit.Before
 import org.junit.Test
 import org.junit.jupiter.api.Assertions.*
+import kotlin.concurrent.fixedRateTimer
+
 //import org.junit.runner.RunWith
 //import org.robolectric.RobolectricTestRunner
 //import org.robolectric.RuntimeEnvironment
@@ -30,6 +32,11 @@ internal class DatabaseHandlerTest {
 
     }
 
+    @Test
+    fun preCondition(){
+        assertNotNull(dbhandler)
+    }
+
 
 
 
@@ -39,7 +46,9 @@ internal class DatabaseHandlerTest {
 
         val dbhandler= DatabaseHandler(instrumentationContext)
         val note= Note()
+        val note2=Note()
         assertDoesNotThrow { dbhandler.createNote(note) }
+        assertDoesNotThrow { dbhandler.createNote(note2) }
 
 
 
@@ -49,12 +58,52 @@ internal class DatabaseHandlerTest {
     fun getNoteCount(){
 
         val note1= Note()
-        dbhandler.createNote(note1)
+        note1.noteText_ID="asd1"
+        note1.noteID=1
+        note1.noteTitle= "fr234"
+        note1.noteDate="1243"
+        note1.noteLabel="dan"
+
         val note2=Note()
+        note2.noteText_ID="asd2"
+        note2.noteID=2
+        note2.noteTitle= "f234r"
+        note2.noteDate="122343"
+        note2.noteLabel="dan"
+        dbhandler.createNote(note1)
         dbhandler.createNote(note2)
+        assertEquals(2,dbhandler.getNoteCount())
+
         val note3=Note()
+        note3.noteText_ID="asd3"
+        note3.noteID=3
+        note3.noteTitle= "fr2"
+        note3.noteDate="122343"
+        note3.noteLabel="dan"
+
         dbhandler.createNote(note3)
         assertEquals(3,dbhandler.getNoteCount())
+    }
+
+    @Test
+    fun getLastNoteId(){
+        val note1= Note()
+        note1.noteText_ID="asd1"
+        note1.noteID=3
+        note1.noteTitle= "fr234"
+        note1.noteDate="1243"
+        note1.noteLabel="dan"
+        dbhandler.createNote(note1)
+
+        val note2=Note()
+        note2.noteText_ID="asd2"
+        note2.noteID=1
+        note2.noteTitle= "f234r"
+        note2.noteDate="122343"
+        note2.noteLabel="dan"
+        dbhandler.createNote(note2)
+
+        assertEquals(3,dbhandler.getLastNoteId())
     }
 
     @Test
@@ -63,6 +112,7 @@ internal class DatabaseHandlerTest {
         val note1= Note()
         note1.noteID=1
         note1.noteTitle="Test"
+        note1.noteText_ID="asd"
         dbhandler.createNote(note1)
         assertEquals("Test",dbhandler.getNoteByID(1).noteTitle)
 
