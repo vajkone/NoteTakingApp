@@ -1,6 +1,7 @@
 package com.dcs.notetakingapp.data
 
 import android.content.Context
+import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import com.dcs.notetakingapp.model.*
@@ -37,5 +38,38 @@ class DatabaseHandler(context: Context): SQLiteOpenHelper(context, DATABSE_NAME,
         db?.execSQL("DROP TABLE IF EXISTS $NOTE_TABLE_NAME")
 
         onCreate(db)
+    }
+
+    fun getAllNotes() : ArrayList<Note>{
+
+        val db: SQLiteDatabase = readableDatabase
+        val list: ArrayList<Note> = ArrayList()
+
+        //Select all notes from table
+        val selectAll = "SELECT * FROM $NOTE_TABLE_NAME"
+
+        val cursor: Cursor = db.rawQuery(selectAll, null)
+
+        //loop through our notes
+        if (cursor.moveToFirst()) {
+            do {
+                var note = Note()
+
+                note.noteID = cursor.getInt(cursor.getColumnIndex(NOTE_KEY_ID))
+                note.noteTitle = cursor.getString(cursor.getColumnIndex(NOTE_TITLE))
+                note.noteLabel = cursor.getString(cursor.getColumnIndex(NOTE_LABEL))
+                note.noteDate = cursor.getString(cursor.getColumnIndex(NOTE_DATE))
+                note.noteText_ID=cursor.getString(cursor.getColumnIndex(NOTE_TEXT_ID))
+
+
+                list.add(note)
+
+            }while (cursor.moveToNext())
+        }
+
+        cursor.close()
+        return list
+
+
     }
 }
