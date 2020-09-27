@@ -1,10 +1,12 @@
 package com.dcs.notetakingapp.activities
 
 import android.annotation.SuppressLint
+import android.app.Activity
 import android.app.AlertDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import com.dcs.notetakingapp.R
 import com.dcs.notetakingapp.data.DatabaseHandler
@@ -13,6 +15,7 @@ import com.dcs.notetakingapp.model.Note
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.search_card.view.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -72,6 +75,34 @@ class MainActivity : AppCompatActivity() {
             dialog!!.show()
             dialog!!.window?.setBackgroundDrawableResource(android.R.color.transparent)
         }
+
+    }
+
+    fun onSearchClicked(v: View){
+        val titlesearch=view!!.titleSearch.text.toString()
+
+        val labelsearch=view!!.labelSearch.text.toString()
+        val textsearch=view!!.textSearch.text.toString()
+        Log.d("searching by tag:",titlesearch)
+
+        noteListAdapter!!.searchByKeywords(titlesearch,labelsearch,textsearch)
+        noteListAdapter!!.notifyDataSetChanged()
+        dialog!!.dismiss()
+
+
+    }
+
+
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if (resultCode== Activity.RESULT_OK){
+            val id:Int = data!!.getIntExtra("recentNoteID",0)
+            noteListItems!!.add(dbHandler!!.getNoteByID(id))
+            noteListAdapter!!.notifyDataSetChanged()
+        }
+
 
     }
 
