@@ -5,6 +5,7 @@ import android.os.Build.VERSION_CODES.LOLLIPOP
 import androidx.test.InstrumentationRegistry.getTargetContext
 import androidx.test.platform.app.InstrumentationRegistry
 import com.dcs.notetakingapp.model.Note
+import com.dcs.notetakingapp.model.NoteText
 
 import org.junit.After
 import org.junit.Before
@@ -40,7 +41,15 @@ internal class DatabaseHandlerTest {
     }
 
 
-
+    @Test
+    fun createNoteText(){
+        val dbhandler= DatabaseHandler(instrumentationContext)
+        val text1= NoteText()
+        text1.noteText_Id="asd"
+        text1.noteText_text="hali"
+        dbhandler.createNoteText(text1)
+        assertEquals("hali",dbhandler.getNoteTextByID("asd").noteText_text)
+    }
 
     @Test
     fun createNote() {
