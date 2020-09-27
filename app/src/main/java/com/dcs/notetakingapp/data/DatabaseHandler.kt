@@ -293,4 +293,17 @@ class DatabaseHandler(context: Context): SQLiteOpenHelper(context, DATABSE_NAME,
 
 
     }
+
+    fun removeNoteById(id: Int) {
+        val db:  SQLiteDatabase = writableDatabase
+
+        db.execSQL("DELETE FROM $NOTE_TABLE_NAME where $NOTE_KEY_ID=$id")
+        db.close()
+    }
+
+    fun removeNotetextById(id: String) {
+        val db:  SQLiteDatabase = writableDatabase
+        db.execSQL("DELETE FROM $NOTETEXT_TABLE_NAME where $NOTETEXT_TEXT_ID='$id'")
+        db.close()
+    }
 }
