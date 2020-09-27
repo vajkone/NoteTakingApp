@@ -2,6 +2,7 @@ package com.dcs.notetakingapp.model
 
 
 
+
 val DATABASE_VERSION: Int = 2
 val DATABSE_NAME: String = "notes.db"
 
