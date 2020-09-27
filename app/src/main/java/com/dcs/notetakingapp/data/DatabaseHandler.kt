@@ -58,6 +58,22 @@ class DatabaseHandler(context: Context): SQLiteOpenHelper(context, DATABSE_NAME,
         Log.d("DATA INSERTED", "SUCCESS")
         db.close()
     }
+    
+    fun createNoteText(noteText:NoteText){
+        val db: SQLiteDatabase = writableDatabase
+
+        val values = ContentValues()
+
+        values.put(NOTETEXT_TEXT_ID, noteText.noteText_Id)
+        values.put(NOTETEXT_CUE, noteText.noteText_cue)
+        values.put(NOTETEXT_TEXT, noteText.noteText_text)
+        values.put(NOTETEXT_SUMMARY, noteText.noteText_summary)
+
+        db.insert(NOTETEXT_TABLE_NAME, null, values)
+
+        Log.d("DATA INSERTED", "SUCCESS")
+        db.close()
+    }
 
     fun getAllNotes() : ArrayList<Note>{
 
