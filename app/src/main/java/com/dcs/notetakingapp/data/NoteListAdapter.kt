@@ -96,4 +96,20 @@ class NoteListAdapter(private var list: MutableList<Note>, private val context: 
             list.plusAssign(listofnotesbytext)
         }
     }
+
+    fun sortByTitle(){
+        list.sortBy { it.noteTitle }
+    }
+
+    fun sortByTitleReversed(){
+        list.reverse()
+    }
+
+    fun sortByDate(){
+        list.sortBy { it.noteDate }
+    }
+
+    fun sortByDateReversed(){
+        list.reverse()
+    }
 }
