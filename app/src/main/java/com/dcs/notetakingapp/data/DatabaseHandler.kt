@@ -36,6 +36,16 @@ class DatabaseHandler(context: Context): SQLiteOpenHelper(context, DATABSE_NAME,
 
     }
 
+    fun clearDbAndRecreate() {
+        clearDb()
+        onCreate(writableDatabase)
+    }
+
+    fun clearDb() {
+        writableDatabase.execSQL("DROP TABLE IF EXISTS $NOTE_TABLE_NAME")
+        writableDatabase.execSQL("DROP TABLE IF EXISTS $NOTETEXT_TABLE_NAME")
+    }
+
     override fun onUpgrade(db: SQLiteDatabase?, p1: Int, p2: Int) {
         db?.execSQL("DROP TABLE IF EXISTS $NOTE_TABLE_NAME")
 
@@ -237,6 +247,13 @@ class DatabaseHandler(context: Context): SQLiteOpenHelper(context, DATABSE_NAME,
         return list
 
 
+    }
+
+    fun removeAllNotes(){
+        val db:  SQLiteDatabase = writableDatabase
+        val delete="delete from $NOTE_TABLE_NAME"
+        db.execSQL(delete)
+        db.close()
     }
 
     fun searchNotesByLabel(label: String):ArrayList<Note> {
