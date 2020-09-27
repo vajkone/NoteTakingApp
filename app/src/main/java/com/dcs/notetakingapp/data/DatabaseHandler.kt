@@ -108,6 +108,19 @@ class DatabaseHandler(context: Context): SQLiteOpenHelper(context, DATABSE_NAME,
 
     }
 
+    fun getNoteCount(): Int{
+
+        val db:  SQLiteDatabase = readableDatabase
+
+        val countQuery = "SELECT * FROM $NOTE_TABLE_NAME"
+        val cursor: Cursor = db.rawQuery(countQuery, null)
+        val returnit = cursor.count
+
+        cursor.close()
+        return returnit
+
+    }
+
     fun updateNote(newNote: Note) {
         val db:  SQLiteDatabase = writableDatabase
         val id=newNote.noteID
