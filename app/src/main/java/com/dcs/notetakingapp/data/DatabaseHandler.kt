@@ -1,9 +1,11 @@
 package com.dcs.notetakingapp.data
 
+import android.content.ContentValues
 import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
+import android.util.Log
 import com.dcs.notetakingapp.model.*
 
 class DatabaseHandler(context: Context): SQLiteOpenHelper(context, DATABSE_NAME,null,
@@ -38,6 +40,23 @@ class DatabaseHandler(context: Context): SQLiteOpenHelper(context, DATABSE_NAME,
         db?.execSQL("DROP TABLE IF EXISTS $NOTE_TABLE_NAME")
 
         onCreate(db)
+    }
+
+    fun createNote(note: Note){
+        val db: SQLiteDatabase = writableDatabase
+
+        val values = ContentValues()
+
+        values.put(NOTE_TITLE, note.noteTitle)
+        values.put(NOTE_DATE, note.noteDate)
+        values.put(NOTE_LABEL, note.noteLabel)
+        values.put(NOTE_TEXT_ID, note.noteText_ID)
+        values.put(NOTE_KEY_ID, note.noteID)
+
+        db.insert(NOTE_TABLE_NAME, null, values)
+
+        Log.d("DATA INSERTED", "SUCCESS")
+        db.close()
     }
 
     fun getAllNotes() : ArrayList<Note>{
