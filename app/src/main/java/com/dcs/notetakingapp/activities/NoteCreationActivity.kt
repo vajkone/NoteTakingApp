@@ -4,13 +4,16 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.format.DateFormat
 import android.util.Log
 import android.widget.TextView
+import android.widget.Toast
 import com.dcs.notetakingapp.R
 import com.dcs.notetakingapp.data.DatabaseHandler
 import com.dcs.notetakingapp.model.Note
 import com.dcs.notetakingapp.model.NoteText
 import kotlinx.android.synthetic.main.activity_note_creation.*
+import java.util.*
 
 class NoteCreationActivity : AppCompatActivity() {
 
@@ -55,6 +58,48 @@ class NoteCreationActivity : AppCompatActivity() {
 
             }
 
+        }
+    }
+    private fun createNote() {
+        val d = Date()
+        val s = DateFormat.format("yyyy. MM. dd. HH:mm:ss", d)
+        val sd = s.toString()
+
+        var note = Note()
+        var noteText = NoteText()
+
+        note.noteTitle = noteTitle.text.toString()
+        note.noteDate = sd
+
+        note.noteLabel = noteLabels.text.toString()
+
+        if (dbHandler!!.getNoteCount() > 0) {
+            note.noteID = dbHandler!!.getLastNoteId() + 1
+        } else {
+            note.noteID = 1
+        }
+        note.noteText_ID = note.noteTitle + (note.noteID).toString()
+
+        noteText.noteText_Id = note.noteText_ID
+        noteText.noteText_cue = noteTextCue.text.toString()
+        noteText.noteText_summary = noteTextSummary.text.toString()
+        noteText.noteText_text = noteTextText.text.toString()
+
+        if(note.noteTitle==""){
+            Toast.makeText(applicationContext, "Please enter a title", Toast.LENGTH_SHORT).show()
+        }
+
+        if(note.noteTitle!=""){
+
+
+            dbHandler!!.createNote(note)
+            dbHandler!!.createNoteText(noteText)
+
+
+            val intent = Intent()
+            intent.putExtra("recentNoteID", note.noteID!!)
+            setResult(RESULT_OK, intent)
+            finish()
         }
     }
 
