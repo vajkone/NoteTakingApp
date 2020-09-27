@@ -243,7 +243,7 @@ class DatabaseHandler(context: Context): SQLiteOpenHelper(context, DATABSE_NAME,
 
         val db:  SQLiteDatabase = readableDatabase
 
-        val query = "SELECT * FROM $NOTE_TABLE_NAME where $NOTE_TITLE LIKE '%$label%'"
+        val query = "SELECT * FROM $NOTE_TABLE_NAME where $NOTE_LABEL LIKE '%$label%'"
         val cursor: Cursor = db.rawQuery(query,null)
         val list=ArrayList<Note>()
 
