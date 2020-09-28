@@ -1,5 +1,5 @@
-Tesztelési jegyzőkönyv
-======================
+### Tesztelési jegyzőkönyv
+
 
 | Tesztelő  | művelet | Kapott eredmény | tesztelt funkció | Működött? |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
@@ -10,5 +10,5 @@ Tesztelési jegyzőkönyv
 | Földesi Zoltán |  Keresés a Note-ok adatbázisában Title alapján | Sikeres | getNoteByTitle() | igen |
 | Mózes Nóra | Note címének frissítése | Sikeres | updateNote() | igen |  
 | Mózes Nóra | Cím nélküli mentés | felugró üzenet kapása | "toast" kiírása | igen |
-| Kiss Máté | visszalépés mentés gomb megnyomása nélkül|Felugró ablak,megkérdezi hogy szeretnénk-e menteni | Sikeres | véletlen kilépés elleni védelem | igen |
-| Garbóczy Vajk | Törlésre nyomás | Felugró ablak megkérdezi,hogy biztos törölni szeretnénk-e| Sikeres | véletlen törlés elleni védelem| igen |
+| Kiss Máté |Felugró ablak,megkérdezi hogy szeretnénk-e menteni | Sikeres | véletlen kilépés elleni védelem | igen |
+| Garbóczy Vajk |Felugró ablak megkérdezi,hogy biztos törölni szeretnénk-e| Sikeres | véletlen törlés elleni védelem| igen |  
