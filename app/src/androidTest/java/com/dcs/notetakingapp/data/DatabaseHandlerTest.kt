@@ -244,7 +244,38 @@ internal class DatabaseHandlerTest {
         assertTrue(list6.size == 2)
     }
 
+    @Test
+    fun updateNote() {
 
+        val note = Note()
+        note.noteID = 1
+        note.noteTitle = "Test"
+        note.noteLabel = "label"
+        note.noteText_ID = "asd"
+        dbhandler.createNote(note)
+        note.noteTitle = "New"
+        dbhandler.updateNote(note)
+
+        assertNotEquals("Test", note.noteTitle)
+        assertEquals("New", note.noteTitle)
+    }
+
+    @Test
+    fun updateNoteText() {
+
+        val note = NoteText()
+        note.noteText_text = "Text"
+        note.noteText_summary = "Summary"
+        dbhandler.createNoteText(note)
+        note.noteText_text = "NewText"
+        note.noteText_summary = "NewSum"
+        dbhandler.updateNoteText(note)
+
+        assertNotEquals("Text", note.noteText_text)
+        assertNotEquals("Summary", note.noteText_summary)
+        assertEquals("NewText", note.noteText_text)
+        assertEquals("NewSum", note.noteText_summary)
+    }
 
     @After
     fun tearDown(){
